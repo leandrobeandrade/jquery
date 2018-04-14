@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - 01</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery01.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery02.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<button type="button" class="btn btn-outline-success">Clique</button><br>
+	<span id="um"></span>
+	<span id="dois"></span>
+	<span id="tres"></span>
+	
+	<script>
+	// CLOSURES 
+		function create() {
+			var counter = 0;
+			return {
+				increment: function() {
+					counter++;
+				},
+				print: function() {
+					console.log( counter );
+				}
+			}
+		}
+		var c = create();
+		c.increment();
+		c.print(); // 1
+
+	// CALLBACKS
+		$( "button" ).click(function( event ) {
+		 	console.log( "clicked: " + event.target );
+		});
+
+	// CALL E APLLY
+		function scope() {
+		 	console.log( this, arguments.length );
+		}
+		scope() // window, 0
+		scope.call( "foobar", [ 1, 2 ] ); // "foobar", 1
+		scope.apply( "foobar", [ 1, 2 ] ); // "foobar", 2
+	</script>
+
+</body>
+</html>
