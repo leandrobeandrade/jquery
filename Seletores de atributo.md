@@ -41,3 +41,7 @@
 ### $( "[attributeFilter1][attributeFilter2][attributeFilterN]" ) - Combina elementos que combinam todos os filtros de atributos especificados.
 
 	$( "input[id][name$='en']" ).comandos  // seleciona ids com name que terminam com en
+
+### $( ":button" ) - Seleciona todos os botões de todos os tipos ná página.
+
+	$( ":button" ).comandos  // seleciona todos os botões.
