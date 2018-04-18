@@ -46,7 +46,7 @@
 	
 	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
 
-### $( ":element" ) - Seleciona todos os elementos de todos os tipos ná página.
+### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
 
 	$( ":button" ).comandos  // seleciona todos os botões
 
@@ -54,10 +54,18 @@
 
 	$( "input:disabled" ).val("Input desabilitado!")  //  seleciona inputs desabilitado
 	
-### $( ":empty" ) - Seleciona elementos vazios na página.
+### $( ":empty" ) - Seleciona elementos vazios.
 	
 	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
 	
 ### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
 
-	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li deem uma li
+	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma li
+	
+### $( ":odd" ) - Seleciona elementos ímpares.
+
+	$( "tr:odd" ).css("background-color","red");  // seleciona linhas ímpares em uma tabela
+	
+### $( ":even" ) - Seleciona elementos pares.
+
+	$( "tr:even" ).css("background-color","blue");
