@@ -53,3 +53,7 @@
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
 	$( "input:disabled" ).val("Input inválido!")  //  seleciona inputs inválidos
+	
+### $( ":empty" ) - Seleciona elementos vazios na página.
+	
+	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
