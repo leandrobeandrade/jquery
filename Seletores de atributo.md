@@ -46,7 +46,7 @@
 	
 	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
 
-### $( ":button" ) - Seleciona todos os botões de todos os tipos ná página.
+### $( ":element" ) - Seleciona todos os elementos de todos os tipos ná página.
 
 	$( ":button" ).comandos  // seleciona todos os botões
 
@@ -57,3 +57,7 @@
 ### $( ":empty" ) - Seleciona elementos vazios na página.
 	
 	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
+	
+### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
+
+	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li deem uma li
