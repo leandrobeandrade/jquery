@@ -48,11 +48,11 @@
 
 ### $( ":button" ) - Seleciona todos os botões de todos os tipos ná página.
 
-	$( ":button" ).comandos  // seleciona todos os botões.
+	$( ":button" ).comandos  // seleciona todos os botões
 
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
-	$( "input:disabled" ).val("Input inválido!")  //  seleciona inputs inválidos
+	$( "input:disabled" ).val("Input desabilitado!")  //  seleciona inputs desabilitado
 	
 ### $( ":empty" ) - Seleciona elementos vazios na página.
 	
