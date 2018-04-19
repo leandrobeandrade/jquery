@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 05</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<style>
+	 	li:hover {
+			cursor: pointer;
+		}
+		li.aceso {
+			background-color: #ccc;
+			color: #fff;
+		}
+		.div1 {
+			width: 60px;
+    		height: 60px;
+    		margin: 5px;
+    		float: left;
+    		border: 2px blue solid;
+    		text-align: center;
+		}
+		.div2{
+			width: 60px;
+			height: 60px;
+			margin: 5px;
+			float: left;
+			border: 4px outset;
+			background: green;
+			text-align: center;
+			font-weight: bolder;
+			cursor: pointer;
+		}
+		.blue {
+			background: blue;
+		}
+		.red {
+			background: red;
+		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery04.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery06.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">	
+		<div class="row">	
+			<div class="form-group">
+				<input class="form-control" id="input" type="text" value="Field 1">
+				<p id="p1"></p>
+				<select class="form-control" id="target">
+					<option value="option1" selected="selected">Opção 1</option>
+					<option value="option2">Opção 2</option>
+					<option value="option3">Opção 3</option>
+					<option value="option4">Opção 4</option>
+					<option value="option5">Opção 5</option>
+				</select>
+			</div>
+		</div>
+		<div id="texto">
+			Dispara o manipulador
+		</div>
+	</div><hr>
+
+	<div>
+		<ul>
+			<li class="li1"><b>Clique</b></li>
+			<li class="li1">Clique <b>aqui também!</b></li>
+		</ul>
+	</div>
+
+	<div>
+		<ul>
+			<li class="li2"><b>Clique</b></li>
+			<li class="li2">Clique <b>aqui também!</b></li>
+		</ul>
+	</div><hr>
+
+	<button type="button" class="btn btn-success">Troca as cores</button>
+	<span id="span1"></span>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1" id="stop">Para aqui</div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<hr>
+
+	<div class="div2"></div>
+	<div class="div2 blue"></div>
+	<div class="div2"></div>
+	<div class="div2 red"></div>
+	<div class="div2"><br/><span id="span2">Peter</span></div>
+	<div class="div2 blue"></div>
+	<p id="p2">&nbsp;</p>
+	<br><hr>
+
+	<p class="p">John Resig</p>
+	<p class="p">George Martin</p>
+	<p class="p">Malcom John Sinclair</p>
+	<p class="p">J. Ohn</p>
+	<hr>
+
+	<div><p id="p3">Alô <a href="http://api.jquery.com" target="_blank">jQuery</a>, o que tem feito?</p></div>
+
+	<div class="div4">
+		Lorem ipsum dolor sit amet, consectetur adipisicing< elit, sed
+		do eiusmod tempor incididunt ut labore et dolore< magna aliqua.
+		<br><br><br><br>
+		Ut enim ad minim veniam, quis nostrud< exercitation ullamco
+		laboris nisi ut aliquip ex ea commodo< consequat.
+		<br><br><br><br>
+		Duis aute irure dolor in reprehenderit< in voluptate velit
+		esse cillum dolore eu fugiat< nulla pariatur.
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$("#input").on("change", function() {
+				var input = $("#input").val();
+ 				$("#p1").text(input);
+			});																		// change()
+
+			$("select").change(function() {
+    			var str = "";
+    			$("select option:selected").each(function() {						// each()
+      				str += $(this).text();
+    			});
+    			$("#texto").text(str);
+  			})																		
+  			.change();	
+
+  			$("body").on("click", function(event) {
+				$(event.target).closest(".li1").toggleClass("aceso");
+			});																		// closest()
+
+			var listElements = $(".li2").css("color", "blue");
+			$("body").on("click", function(event) {
+			  	$(event.target).closest(listElements).toggleClass("aceso");
+			});		
+
+  			$("button").click(function() {
+  				$(".div1").each(function(index, element) {							// each()
+					// element == this
+					$(element).css("backgroundColor", "yellow");
+					if ($(this).is("#stop")) {										// is()
+						$("#span1").text("Parou na div com index #" + index);		
+						return false;
+					}
+				});
+  			});			
+
+  			$(".div2").one("click", function() {									// one()
+  				if ($(this).is(":first-child")) {									// is()
+  					$("#p2").text("Ésta é a primeira div.");
+  				} else if ($(this).is(".blue,.red")) {
+  					$("#p2").text("Ésta é azul ou vermelha div.");
+  				} else if ($(this).is(":contains('Peter')")) {						// contains()
+  					$("#p2").text("Ésta é Peter!");
+  				} else {
+  					$("#p2").html("Nada de <em>especial</em>.");
+  				}
+  				$("#p2").hide().slideDown("slow");
+  				$(this).css({
+  					"border-style": "inset",
+  					"cursor": "pointer"
+  				});
+  			});								
+
+			$(".p:contains('John')").css("text-decoration", "underline");			// contains()
+
+			$("#p3").contents().filter(function(){									// content()			
+    			return this.nodeType !== 1; 
+ 			}).wrap("<b></b>");														// wrap()
+
+
+ 			$(".div4").contents().filter(function() {
+     			return this.nodeType === 3; // nodeType - códigos com números para identificar elementos html
+   	 		}).wrap("<p></p>").end().filter("br").remove();
+
+		})
+	</script>
+
+</body>
+</html>
