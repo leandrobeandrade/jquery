@@ -68,4 +68,12 @@
 	
 ### $( ":even" ) - Seleciona elementos pares.
 
-	$( "tr:even" ).css("background-color","blue");
+	$( "tr:even" ).css("background-color","blue");  //  seleciona linhas pares em uma tabela
+	
+### $( ":first" ) - Seleciona o primeiro elemento de um conjunto de elementos.
+
+	$( "p:first" ).css("background-color","blue");  //  seleciona o primeiro p
+	
+### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
+
+	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
