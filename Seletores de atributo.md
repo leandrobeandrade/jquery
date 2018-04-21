@@ -1,3 +1,43 @@
+### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
+
+	$( ":button" ).comandos  // seleciona todos os botões
+
+### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
+
+	$( "input:disabled" ).val("Input desabilitado!")  //  seleciona inputs desabilitado
+	
+### $( ":empty" ) - Seleciona elementos vazios.
+	
+	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
+	
+### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
+
+	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma ul
+	
+### $( ":odd" ) - Seleciona elementos ímpares.
+
+	$( "tr:odd" ).css("background-color","red");  // seleciona linhas ímpares em uma tabela
+	
+### $( ":even" ) - Seleciona elementos pares.
+
+	$( "tr:even" ).css("background-color","blue");  //  seleciona linhas pares em uma tabela
+	
+### $( ":first" ) - Seleciona o primeiro elemento de um conjunto de elementos.
+
+	$( "p:first" ).css("background-color","blue");  //  seleciona o primeiro p
+	
+### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
+
+	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
+
+### $( "[attribute]" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+
+	$( "input" ).comandos  // seleciona inputs
+	
+### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
+	
+	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
+	
 ### $( "[attribute|='value']" ) - Seleciona elementos que possuam o atributo especificado com um valor igual a uma string determinada ou que começa com essa seqüência seguida de um hífen (-)
 
 	$( "input[name|='en']" ).comandos  // seleciona en, en-UK
@@ -33,47 +73,7 @@
 	$( "input[name!='en']" ).comandos  // seleciona outros
 
 
-### $( "[attribute]" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
-
-	$( "input" ).comandos  // seleciona inputs
-
-
 ### $( "[attributeFilter1][attributeFilter2][attributeFilterN]" ) - Combina elementos que combinam todos os filtros de atributos especificados.
 
 	$( "input[id][name$='en']" ).comandos  // seleciona ids com name que terminam com en
 	
-### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
-	
-	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
-
-### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
-
-	$( ":button" ).comandos  // seleciona todos os botões
-
-### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
-
-	$( "input:disabled" ).val("Input desabilitado!")  //  seleciona inputs desabilitado
-	
-### $( ":empty" ) - Seleciona elementos vazios.
-	
-	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
-	
-### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
-
-	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma ul
-	
-### $( ":odd" ) - Seleciona elementos ímpares.
-
-	$( "tr:odd" ).css("background-color","red");  // seleciona linhas ímpares em uma tabela
-	
-### $( ":even" ) - Seleciona elementos pares.
-
-	$( "tr:even" ).css("background-color","blue");  //  seleciona linhas pares em uma tabela
-	
-### $( ":first" ) - Seleciona o primeiro elemento de um conjunto de elementos.
-
-	$( "p:first" ).css("background-color","blue");  //  seleciona o primeiro p
-	
-### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
-
-	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
