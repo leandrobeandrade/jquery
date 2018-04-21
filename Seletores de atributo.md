@@ -30,7 +30,7 @@
 
 	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
 
-### $( "[attribute]" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
 
 	$( "input" ).comandos  // seleciona inputs
 	
