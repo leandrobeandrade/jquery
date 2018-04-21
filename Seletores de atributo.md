@@ -60,7 +60,7 @@
 	
 ### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
 
-	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma li
+	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma ul
 	
 ### $( ":odd" ) - Seleciona elementos ímpares.
 
