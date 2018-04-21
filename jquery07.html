@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 07</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<style>
+		.div1 {
+			width: 60px;
+    		height: 60px;
+    		margin: 10px;
+    		border: 2px solid blue;
+    		float: left;
+		}
+	</style>	
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery06.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery08.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<ul>
+			<li class="li">Um </li>
+		  	<li class="li">Dois </li>
+		  	<li class="li">Tr&ecirc;s </li>
+		  	<li class="li">Quatro </li>
+		  	<li class="li">Cinco </li>
+		</ul>
+		<span></span>
+	</div><hr>
+
+	<div>
+  		<div class="um">Tchau</div>
+  		<div class="dois">Oi</div>
+  		<strong></strong><br>
+  		<strong>Um texto</strong><br>
+  		<strong>Outro texto</strong>
+	</div><hr>
+
+	<div class="container-fluid">	
+		<div class="row">	
+			<div class="form-group">
+				<input class="form-control" type="text" disabled>
+				<input class="form-control" type="text">
+			</div>
+		</div>
+	</div><hr>
+
+	<div>	
+		<ul class="first">
+			<li class="foo">Lista - item 1</li>
+			<li>list item 2</li>
+			<li class="bar">Lista - item 3</li>
+		</ul>
+		<ul class="second">
+			<li class="foo">Lista - item 1</li>
+			<li>list item 2</li>
+			<li class="bar">Lista - item 3</li>
+		</ul>
+	</div><hr>
+
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+	<div class="div1"></div>
+
+	<script>
+		$(document).ready(function() {
+			$(".li").each(function(index) {													// each()
+  				$("span").text(index + ": " + $(".li").text());
+			});
+
+			$(".um").empty();																// empty()
+
+			$("strong:empty").text("Estava vazio, foi selecionado com :empty");				// :empty
+
+			$("input:disabled").val("Input desabilitado!");									// :disabled
+
+			$("ul.first").find(".foo")														// find()
+    		.css("background-color", "red")
+  			.end()
+  			.find(".bar")
+    		.css("background-color", "green")
+    		.end();																			// end()
+
+    		$(".div1").eq(3).css("background-color", "blue");								// eq()
+    		$(".div1").eq(-2).css("background-color", "black");
+
+		})
+
+	</script>
+
+</body>
+</html>
