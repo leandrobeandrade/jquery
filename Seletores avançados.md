@@ -6,6 +6,10 @@
 
 	$( "div:button" ).comandos  //  seleciona todos os botões dentro da div
 	
+### $( ":not()" ) - Seleciona elementos não encontrados nos parâmetros passados.
+	
+	$( "input:not(:checked)" ).css("background-color","red")  //  seleciona inputs que estão com o atributo checked falso
+	
 ### $( ":lang()" ) - Seleciona determinada linguagem no html.
 
 	$( "div:lang(pt-br)" ).addClass("yellow")  //  seleciona a div com o atributo lang pt-br e adiciona a classe
@@ -36,11 +40,11 @@
 	
 ### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
 
-	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
+	$( "p:last" ).css( "background-color","blue" );  //  seleciona o último p
 	
 ### $( ":last-child" ) - Seleciona o último filho em um nó Html.
 
-	$( "div span:last-child" ).addClass("color","red")  //  seleciona o último span dentro de uma div
+	$( "div span:last-child" ).addClass( "color","red" )  //  seleciona o último span dentro de uma div
 	
 ### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
@@ -49,6 +53,14 @@
 ### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
 
 	$( "lt:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
+	
+### $( ":nth-child()" ) - Seleciona elementos a partir de determinada localização.
+
+	$( "ul li:nth-child(2)" ).css( "color", "red" );  //  seleciona o segundo li em uma ul
+	
+### $( ":nth-last-child" ) - Seleciona elementos a partir de determinada localização deo último para o primeiro.
+
+	$( "ul li:nth-last-child" ).css( "color", "red" )  //  seleciona o segundo li de baixo para cima em uma ul
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
