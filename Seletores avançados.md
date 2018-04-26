@@ -1,6 +1,10 @@
 ### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
 
-	$( ":button" ).comandos  // seleciona todos os botões
+	$( "div:button" ).comandos  //  seleciona todos os botões dentro da div
+	
+### $( ":lang()" ) - Seleciona determinada linguagem no html.
+
+	$( "div:lang(pt-br)" ).addClass("yellow")  //  seleciona a div com o atributo lang pt-br e adiciona a classe yellow
 
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
