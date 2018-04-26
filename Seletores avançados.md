@@ -8,7 +8,7 @@
 	
 ### $( ":not()" ) - Seleciona elementos não encontrados nos parâmetros passados.
 	
-	$( "input:not(:checked)" ).css("background-color","red")  //  seleciona inputs que estão com o atributo checked falso
+	$( "input:not(:checked)" ).css("background-color","red")  //  seleciona inputs com o atributo checked falso
 	
 ### $( ":lang()" ) - Seleciona determinada linguagem no html.
 
@@ -58,9 +58,17 @@
 
 	$( "ul li:nth-child(2)" ).css( "color", "red" );  //  seleciona o segundo li em uma ul
 	
-### $( ":nth-last-child" ) - Seleciona elementos a partir de determinada localização deo último para o primeiro.
+### $( ":nth-last-child()" ) - Seleciona elementos a partir de determinada localização do último para o primeiro.
 
-	$( "ul li:nth-last-child" ).css( "color", "red" )  //  seleciona o segundo li de baixo para cima em uma ul
+	$( "ul li:nth-last-child(2)" ).css( "color", "red" )  //  seleciona o segundo li de baixo para cima em uma ul
+	
+### $( ":nth-of-type()" ) - Seleciona elementos do mesmo tipo em determinada localização.
+
+	$( "span:nth-of-type(2)" ).css( "color", "red" )  //  seleciona o segundo span 
+	
+### $( ":nth-last-of-type()" ) - Seleciona elementos do mesmo tipo a partir de determinada localização do último para o primeiro.
+
+	$("span:nth-last-of-type(2)").css( "color", "red" )  //  seleciona o segundo span de baixo para cima em uma ul	
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
