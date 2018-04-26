@@ -1,3 +1,7 @@
+### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+
+	$( "input" ).comandos  // seleciona inputs
+	
 ### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
 
 	$( "div:button" ).comandos  //  seleciona todos os botões dentro da div
@@ -33,10 +37,18 @@
 ### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
 
 	$( "p:last" ).css("background-color","blue");  //  seleciona o último p
+	
+### $( ":last-child" ) - Seleciona o último filho em um nó Html.
 
-### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+	$( "div span:last-child" ).addClass("color","red")  //  seleciona o último span dentro de uma div
+	
+### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
-	$( "input" ).comandos  // seleciona inputs
+	$( "td:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células depois da quinta célula em uma tabela
+	
+### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
+
+	$( "lt:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
