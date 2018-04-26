@@ -75,5 +75,5 @@
 
 ### $( "[attributeFilter1][attributeFilter2][attributeFilterN]" ) - Combina elementos que combinam todos os filtros de atributos especificados.
 
-	$( "input[id][name$='en']" ).comandos  // seleciona ids com name que terminam com en
+	$( "input[class][name$='en']" ).comandos  // seleciona classes com name que terminam com en
 	
