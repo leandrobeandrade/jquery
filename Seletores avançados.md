@@ -4,7 +4,7 @@
 	
 ### $( ":lang()" ) - Seleciona determinada linguagem no html.
 
-	$( "div:lang(pt-br)" ).addClass("yellow")  //  seleciona a div com o atributo lang pt-br e adiciona a classe yellow
+	$( "div:lang(pt-br)" ).addClass("yellow")  //  seleciona a div com o atributo lang pt-br e adiciona a classe
 
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
