@@ -45,10 +45,14 @@
 ### $( ":last-child" ) - Seleciona o último filho em um nó Html.
 
 	$( "div span:last-child" ).addClass( "color","red" )  //  seleciona o último span dentro de uma div
+
+### $( ":only-child" ) - Seleciona todos os elementos que são filhos únicos de seus pais.
+
+	$( "div span:only-child" ).css( "color","red" ) // seleciona apenas o span dentro de div que não tem outros spans
 	
 ### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
-	$( "td:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células depois da quinta célula em uma tabela
+	$( "td:gt(4)" ).css( "backgroundColor", "yellow" ) // seleciona células depois da quinta célula em uma tabela
 	
 ### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
 
