@@ -48,7 +48,11 @@
 
 ### $( ":only-child" ) - Seleciona todos os elementos que são filhos únicos de seus pais.
 
-	$( "div span:only-child" ).css( "color","red" ) // seleciona apenas o span dentro de div que não tem outros spans
+	$( "div span:only-child" ).css( "color","red" ) // seleciona apenas o span dentro de div que só tem este span
+	
+### $( ":only-of-type" ) - Seleciona todos os elementos que não têm irmãos com o mesma tag.
+
+	$( "div span:only-of-type" ).css( "color","red" ) // seleciona apenas spans se não houver outros span na div
 	
 ### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
