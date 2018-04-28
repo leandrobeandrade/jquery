@@ -8,19 +8,23 @@
 	
 ### $( ":not()" ) - Seleciona elementos não encontrados nos parâmetros passados.
 	
-	$( "input:not(:checked)" ).css("background-color","red")  //  seleciona inputs com o atributo checked falso
+	$( "input:not(:checked)" ).css("background-color","red");  //  seleciona inputs com o atributo checked falso
 	
 ### $( ":lang()" ) - Seleciona determinada linguagem no html.
 
-	$( "div:lang(pt-br)" ).addClass("yellow")  //  seleciona a div com o atributo lang pt-br e adiciona a classe
+	$( "div:lang(pt-br)" ).addClass("yellow");  //  seleciona a div com o atributo lang pt-br e adiciona a classe
 
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
-	$( "input:disabled" ).val("Input desabilitado!")  //  seleciona inputs desabilitado
+	$( "input:disabled" ).val("Input desabilitado!");  //  seleciona inputs desabilitado
 	
 ### $( ":empty" ) - Seleciona elementos vazios.
 	
 	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
+	
+### $( ":contains(texto)" ) - Seleciona todos os elementos que possuem um determinado texto passado no parâmetro.
+
+	$( "p:contains('Teste')" ).css("color", "red");  //  seleciona tags p que contem a palavra Teste
 	
 ### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
 
@@ -44,39 +48,39 @@
 	
 ### $( ":last-child" ) - Seleciona o último filho em um nó Html.
 
-	$( "div span:last-child" ).addClass( "color","red" )  //  seleciona o último span dentro de uma div
+	$( "div span:last-child" ).addClass( "color","red" );  //  seleciona o último span dentro de uma div
 
 ### $( ":only-child" ) - Seleciona todos os elementos que são filhos únicos de seus pais.
 
-	$( "div span:only-child" ).css( "color","red" ) // seleciona apenas o span dentro de div que só tem este span
+	$( "div span:only-child" ).css( "color","red" ); // seleciona apenas o span dentro de div que só tem este span
 	
 ### $( ":only-of-type" ) - Seleciona todos os elementos que não têm irmãos com o mesma tag.
 
-	$( "div span:only-of-type" ).css( "color","red" ) // seleciona apenas spans se não houver outros span na div
+	$( "div span:only-of-type" ).css( "color","red" ); // seleciona apenas spans se não houver outros span na div
 	
 ### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
-	$( "td:gt(4)" ).css( "backgroundColor", "yellow" ) // seleciona células depois da quinta célula em uma tabela
+	$( "td:gt(4)" ).css( "backgroundColor", "yellow" ); // seleciona células depois da quinta célula em uma tabela
 	
 ### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
 
 	$( "lt:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
 	
-### $( ":nth-child()" ) - Seleciona elementos a partir de determinada localização.
+### $( ":nth-child(index)" ) - Seleciona elementos a partir de determinada localização.
 
 	$( "ul li:nth-child(2)" ).css( "color", "red" );  //  seleciona o segundo li em uma ul
 	
-### $( ":nth-last-child()" ) - Seleciona elementos a partir de determinada localização do último para o primeiro.
+### $( ":nth-last-child(index)" ) - Seleciona elementos a partir de determinada localização do último para o primeiro.
 
 	$( "ul li:nth-last-child(2)" ).css( "color", "red" )  //  seleciona o segundo li de baixo para cima em uma ul
 	
-### $( ":nth-of-type()" ) - Seleciona elementos do mesmo tipo em determinada localização.
+### $( ":nth-of-type(index)" ) - Seleciona elementos do mesmo tipo em determinada localização.
 
-	$( "span:nth-of-type(2)" ).css( "color", "red" )  //  seleciona o segundo span 
+	$( "span:nth-of-type(2)" ).css( "color", "red" );  //  seleciona o segundo span 
 	
-### $( ":nth-last-of-type()" ) - Seleciona elementos do mesmo tipo a partir de determinada localização do último para o primeiro.
+### $( ":nth-last-of-type(index)" ) - Seleciona elementos do mesmo tipo a partir de determinada localização do último para o primeiro.
 
-	$("span:nth-last-of-type(2)").css( "color", "red" )  //  seleciona o segundo span de baixo para cima em uma ul	
+	$("span:nth-last-of-type(2)").css( "color", "red" );  //  seleciona o segundo span de baixo para cima em uma ul	
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
