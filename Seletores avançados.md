@@ -82,6 +82,10 @@
 
 	$("span:nth-last-of-type(2)").css( "color", "red" );  //  seleciona o segundo span de baixo para cima em uma ul	
 	
+### ( "option:selected" ) - Seleciona itens selecionados em um select.
+
+	$( "select option:selected" ).comados  //  seleciona um ou mais elementos selecionados dentro de um select
+	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
 	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
