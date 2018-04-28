@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 18</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<style>
+		.div, span {
+    		display: block;
+    		width: 80px;
+    		height: 80px;
+    		margin: 5px;
+    		background: #bfa;
+    		float: left;
+    		font-size: 14px;
+ 		}
+  		.div #small {
+    		width: 60px;
+    		height: 45px;
+    		font-size: 12px;
+    		background: #fab;
+    		margin-left: 5px;
+  		}
+  		.div1 {
+			width: 80px;
+    		height: 80px;
+    		background: #abc;
+    		border: 2px solid black;
+    		margin: 10px;
+    		float: left;
+  		}
+  		.after {
+  			border-color: red;
+  		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery17.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery19.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">	
+		<div class="row">	
+			<div class="form-group">
+				<label for="name">Name:</label>
+  				<input class="form-control" name="name" id="name">
+  				<fieldset>
+   		 			<label for="newsletter">Newsletter:</label>
+    				<input class="form-control" name="newsletter" id="newsletter">
+  				</fieldset>
+  				<input class="form-control" name="none">
+			</div>
+		</div>
+	</div><hr>
+
+	<div style="padding-bottom: 90px">
+		<div class="div">div (n&atilde;o corresponde antes do #prev)</div>
+		<span id="prev">span#prev</span>
+		<div class="div">div irm&atilde;</div>
+		<div class="div">div irm&atilde;<div id="small">div sobrinha</div></div>
+		<span>span irm&atilde; (n&atilde;o uma div)</span>
+		<div class="div">div irm&atilde;</div>
+	</div><hr>
+
+	<div style="padding-bottom: 100px">
+		<div class="div1">primeiro</div>
+		<div class="div1">irmã<div class="div1">filha</div></div>
+		<div class="div1">irmã</div>
+		<div class="div1">irmã</div>
+	</div><hr>
+
+	<div>	
+		<dl>
+	  		<dt id="term-1">lista 1</dt>
+	  		<dd>1-a</dd>
+	  		<dd>1-b</dd>
+	  		<dd>1-c</dd>
+	  		<dd>1-d</dd>
+	  		<dt id="term-2">lista 2</dt>
+	  		<dd>2-a</dd>
+	  		<dd>2-b</dd>
+	  		<dd>2-c</dd>
+	  		<dt id="term-3">lista 3</dt>
+	  		<dd>3-a</dd>
+	  		<dd>3-b</dd>
+		</dl>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$("label + input").css({															// next adjacente
+				"color":"blue","border":"solid 1px blue"
+			}).val("Encontrado por label + input");
+
+			$("#prev ~ .div").css("border", "3px groove blue");									// next irmãos
+
+			$(".div1:first").nextAll().addClass("after");										// nextAll()
+
+			$("#term-2").nextUntil("dt").css("background-color", "#ccc");						// nextUntil()
+
+			var term3 = $("#term-3");
+			$("#term-1").nextUntil(term3, "dd").css("color", "red");							// nextUntil()
+
+		})
+
+	</script>
+
+</body>
+</html>
