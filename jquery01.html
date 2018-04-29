@@ -30,7 +30,7 @@
 					counter++;
 				},
 				print: function() {
-					console.log( counter );
+					console.log(counter);
 				}
 			} 
 		}
@@ -39,17 +39,17 @@
 		c.print(); // 1
 
 	// CALLBACKS
-		$( "button" ).click(function( event ) {
-		 	console.log( "clicked: " + event.target );
+		$("button").click(function(event) {
+		 	console.log("clicked: " + event.target);
 		});
 
 	// CALL E APLLY
 		function scope() {
-		 	console.log( this, arguments.length );
+		 	console.log(this, arguments.length);
 		}
 		scope() // window, 0
-		scope.call( "foobar", [ 1, 2 ] ); // "foobar", 1
-		scope.apply( "foobar", [ 1, 2 ] ); // "foobar", 2
+		scope.call("foobar", [1, 2]); // "foobar", 1
+		scope.apply("foobar", [1, 2]); // "foobar", 2
 	</script> 
 
 </body>
