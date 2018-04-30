@@ -22,6 +22,14 @@
 	
 	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
 	
+### $( ":visible" ) - Seleciona elementos que não estão com display none.
+
+	$( "div:visible" ).css("background-color","red");  //  seleciona divs visíveis no html
+	
+### $( ":hidden" ) - Seleciona elementos que estão com display none.
+
+	$( "div:hidden" ).show("fast");  //  mostra divs que não estão aparecendo no html  
+	
 ### $( ":contains(texto)" ) - Seleciona todos os elementos que possuem um determinado texto passado no parâmetro.
 
 	$( "p:contains('Teste')" ).css("color", "red");  //  seleciona tags p que contem a palavra Teste
