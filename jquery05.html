@@ -150,7 +150,7 @@
 			});		
 
   			$("button").click(function() {
-  				$(".div1").each(function(index, element) {							// each()
+  				$(".div1").each(function(index, element) {					// each()
 					// element == this
 					$(element).css("backgroundColor", "yellow");
 					if ($(this).is("#stop")) {										// is()
@@ -160,12 +160,12 @@
 				});
   			});			
 
-  			$(".div2").one("click", function() {									// one()
-  				if ($(this).is(":first-child")) {									// is()
+  			$(".div2").one("click", function() {							// one()
+  				if ($(this).is(":first-child")) {						// is()
   					$("#p2").text("Ésta é a primeira div.");
   				} else if ($(this).is(".blue,.red")) {
   					$("#p2").text("Ésta é azul ou vermelha div.");
-  				} else if ($(this).is(":contains('Peter')")) {						// contains()
+  				} else if ($(this).is(":contains('Peter')")) {					// contains()
   					$("#p2").text("Ésta é Peter!");
   				} else {
   					$("#p2").html("Nada de <em>especial</em>.");
@@ -177,9 +177,9 @@
   				});
   			});								
 
-			$(".p:contains('John')").css("text-decoration", "underline");			// contains()
+			$(".p:contains('John')").css("text-decoration", "underline");				// contains()
 
-			$("#p3").contents().filter(function(){									// content()			
+			$("#p3").contents().filter(function(){							// content()			
     			return this.nodeType !== 1; 
  			}).wrap("<b></b>");														// wrap()
 
