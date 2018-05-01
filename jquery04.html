@@ -75,19 +75,19 @@
 			var contador = function() {
 				var x = $("input:checked").length;
 				$("#span1").text(x + (x === 0 || x === 1 ? " elemento está" : " elementos estão") + " com campo checado");
-			};															// :checked
+			};											// :checked
 			contador();
 
 			$("input[type=checkbox]").on("click", function(){
 				var valor = $(this).attr("value");
 				$("#span2").text(valor);	
 				contador();
-			});															// attr()
+			});											// attr()
 
 			$("#input").on("blur", function() {
 				var input = $("#input").val();
 				$("#p1").before(input);
-			});															// blur()
+			});											// blur()
 
 			$("#input").on("keyup", function() {
 				var input = $("#input").val();
@@ -96,10 +96,10 @@
 
 			$("ul.topnav > li").css("border", "3px double red");		
 
-			$(".child").children(".selecionado").css("color","blue");  								// children()
-			$(".div").children().css("border-bottom", "3px double red");// children()
+			$(".child").children(".selecionado").css("color","blue");  				// children()
+			$(".div").children().css("border-bottom", "3px double red");
 
-			$("em").clone().prependTo("#p2");											// clone()
+			$("em").clone().prependTo("#p2");							// clone()
 
 		})
 	</script>
