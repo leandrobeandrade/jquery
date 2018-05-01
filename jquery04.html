@@ -73,9 +73,9 @@
 		$(document).ready(function(){
 
 			var contador = function() {
-				var x = $("input:checked").length;
+				var x = $("input:checked").length;						// :checked
 				$("#span1").text(x + (x === 0 || x === 1 ? " elemento está" : " elementos estão") + " com campo checado");
-			};											// :checked
+			};											
 			contador();
 
 			$("input[type=checkbox]").on("click", function(){
