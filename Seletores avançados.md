@@ -34,7 +34,7 @@
 
 	$( "p:contains('Teste')" ).css("color", "red");  //  seleciona tags p que contem a palavra Teste
 	
-### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados.
+### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados. 
 
 	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma ul
 	
