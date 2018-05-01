@@ -75,21 +75,21 @@
 
 	<script>
 		$(document).ready(function() {
-			$("tr:even").css("background-color", "#00f");								// :even
-			$("tr:odd").css("background-color", "#f00");								// :odd
+			$("tr:even").css("background-color", "#00f");							// :even
+			$("tr:odd").css("background-color", "#f00");							// :odd
 
 			var result = $("#resultado");
 			for (var i = 0; i < 5; i++) {
 				$("button").eq(i).on("click", {value: i}, function(event) {
 					var msgs = [
 					"botão = " + $(this).index(),
-					"event.data.value = " + event.data.value,							// event.data
+					"event.data.value = " + event.data.value,					// event.data
 					"index = " + i
 					];
 					result.append(msgs.join(", ") + "<br>");
 				});
 				$("#resultado").click(function() {
-					(this).remove();													// remove()
+					(this).remove();								// remove()
 				})
 			}
 			
@@ -99,7 +99,7 @@
 
 			$(".btn-danger").click(function(event) {
   				alert(event.isDefaultPrevented()); // false 
-  				event.preventDefault();													// preventDefault()
+  				event.preventDefault();									// preventDefault()
  				alert(event.isDefaultPrevented()); // true - checa se o preventDefault() foi acionado
 			});
 
