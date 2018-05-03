@@ -78,11 +78,11 @@
 			};											
 			contador();
 
-			$("input[type=checkbox]").on("click", function(){
-				var valor = $(this).attr("value");
+			$("input[type=checkbox]").click(function(){						// click()			
+				var valor = $(this).attr("value");                                              // attr()
 				$("#span2").text(valor);	
 				contador();
-			});											// attr()
+			});											
 
 			$("#input").on("blur", function() {
 				var input = $("#input").val();
