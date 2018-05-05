@@ -11,45 +11,45 @@
 
 	<style>
 		.div {
-    		width: 80px;
-    		float: left;
+    			width: 80px;
+    			float: left;
   		}
   		input {
-    		clear: left;
+    			clear: left;
   		}
   		div.out {
-    		width: 40%;
-    		height: 120px;
-    		margin: 0 15px;
-    		background-color: #d6edfc;
-    		float: left;
+    			width: 40%;
+    			height: 120px;
+    			margin: 0 15px;
+    			background-color: #d6edfc;
+    			float: left;
   		}
   		div.in {
-    		width: 60%;
-    		height: 60%;
+    			width: 60%;
+    			height: 60%;
    		 	background-color: #fc0;
-    		margin: 10px auto;
+    			margin: 10px auto;
   		}
   		#div2 {
-    		width: 220px;
-    		height: 170px;
-    		margin: 10px 50px 10px 10px;
-    		background: yellow;
-    		border: 2px groove;
-    		float: right;
+    			width: 220px;
+    			height: 170px;
+    			margin: 10px 50px 10px 10px;
+    			background: yellow;
+    			border: 2px groove;
+    			float: right;
   		}
   		#div1 p {
-    		margin: 0;
-    		margin-left: 10px;
-    		color: red;
-    		width: 220px;
-    		height: 120px;
-    		padding-top: 70px;
-    		float: left;
-    		font-size: 14px;
+    			margin: 0;
+    			margin-left: 10px;
+    			color: red;
+    			width: 220px;
+    			height: 120px;
+    			padding-top: 70px;
+    			float: left;
+    			font-size: 14px;
   		}
   		#div1 span {
-    		display: block;
+    			display: block;
   		}
 	</style>
 
@@ -112,38 +112,38 @@
 	<script>
 		$(document).ready(function() {
 			$.fn.equalizeHeights = function() {
-	  			var maxHeight = this.map(function(i, e) {										// map()
+	  			var maxHeight = this.map(function(i, e) {							// map()
 	    			return $(e).height();
 	  			}).get();
-	  			return this.height(Math.max.apply(this, maxHeight));							// height()
+	  			return this.height(Math.max.apply(this, maxHeight));						// height()
 			};
 	 		$("input").click(function() {
 	  			$(".div").equalizeHeights();
 			});
 
-			$("samp").mouseup(function() {														// mouseup()
+			$("samp").mouseup(function() {										// mouseup()
 	    		$(this).append("<span style='color:#f00;'> Mouse up.</span>");
-	  		}).mousedown(function() {															// mousedown()
+	  		}).mousedown(function() {										// mousedown()
 	    		$(this).append("<span style='color:#00f;'> Mouse down.</span>");
 	  		});
 
 	  		var i = 0;
-	  		$("div.overout").mouseover(function() {												// mouseover()
+	  		$("div.overout").mouseover(function() {									// mouseover()
     			$("p:first", this).text("mouse over");
     			$("p:last", this).text(++i);
-  			}).mouseout(function() {															// mouseout()
+  			}).mouseout(function() {										// mouseout()
    				 $("p:first", this).text("mouse out");
  			 });
  
 			var n = 0;
-			$("div.enterleave").mouseenter(function() {											// mouseenter()
+			$("div.enterleave").mouseenter(function() {								// mouseenter()
     			$("p:first", this).text("mouse enter");
     			$("p:last", this).text(++n);
-  			}).mouseleave(function() {															// mouseleave()
+  			}).mouseleave(function() {										// mouseleave()
    				$("p:first", this).text("mouse leave");
   			});
 
-  			$("#div2").mousemove(function(event) {												// mousemove()
+  			$("#div2").mousemove(function(event) {									// mousemove()
   				var pageCoords = "(" + event.pageX + ", " + event.pageY + ")";
   				var clientCoords = "(" + event.clientX + ", " + event.clientY + ")";
   				$("#div1 span:first").text("(event.pageX, event.pageY) : " + pageCoords);
@@ -151,7 +151,7 @@
 			});
 
 			$("button[disabled]").next().text("este botão está disabled");						// next()
-			$("li.third-item").next().css("background-color", "red");							// next()
+			$("li.third-item").next().css("background-color", "red");						// next()
 
 		})
 
