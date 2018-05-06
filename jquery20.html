@@ -123,16 +123,16 @@
   				$("div").on("click", "#theone", flash).find("#theone").text("Pode Clicar!");	// on()
 			});
 			$("#unbind").click(function() {	
-  				$("div").off("click", "#theone", flash).find("#theone").text("Nada...");   		// off()
+  				$("div").off("click", "#theone", flash).find("#theone").text("Nada...");   	// off()
 			});
 
 			$("*", document.body).click(function(event) {
-  				var offset = $(this).offset();													// offset()
-  				event.stopPropagation();													// stopPropagation()
+  				var offset = $(this).offset();							// offset()
+  				event.stopPropagation();							// stopPropagation()
   				$("#result").text(this.tagName +" coords (" + offset.left + ", " + offset.top + ")");
 			});
 
-			$("li .item-a").offsetParent().css("background-color", "yellow");					// offsetParent()
+			$("li .item-a").offsetParent().css("background-color", "yellow");			// offsetParent()
 
 			$(".div span:only-child").text("Span única").css("border", "2px blue solid");		// :only-child
 
