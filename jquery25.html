@@ -22,10 +22,10 @@
 		}
 		.bloco {
 			background-color: #abc;
-    		border: 2px solid black;
-    		width: 200px;
-    		height: 80px;
-    		margin: 10px;
+			border: 2px solid black;
+			width: 200px;
+			height: 80px;
+			margin: 10px;
 		}
 	</style>
 
@@ -81,25 +81,25 @@
 
 	<script>
 		$(document).ready(function() {		
-			$("#ul li").slice(2, 4).css("background-color", "red");								// slice()
+			$("#ul li").slice(2, 4).css("background-color", "red");							// slice()
 
 			$(".btn-success").on("click", function() {							
-				$("#div1").slideDown("slow");													// slideDown()
+				$("#div1").slideDown("slow");									// slideDown()
 			});
 
 			$(".btn-success").on("click", function() {
-				$("#div2").slideToggle("slow");													// slideToggle()
+				$("#div2").slideToggle("slow");									// slideToggle()
 			});
 
 			$(".botao").click(function() {
-  				$(this).parent().slideUp("slow", function() {									// slideUp()
+  				$(this).parent().slideUp("slow", function() {							// slideUp()
   					$("code").text($(".botao", this).text() + " foi completada.");			
   				});
 			});
 
 			var bloco = $(".bloco");
  			$("#toggle").on("click", function() {
-  				bloco.stop().slideToggle(1000);													// slideToggle()
+  				bloco.stop().slideToggle(1000);									// slideToggle()
 			});
 
 		})
