@@ -1,5 +1,5 @@
 # jQuery
-Métodos do jQuery com exemplos práticos desta biblioteca **JS** que ajudam muito no desenvolvimento e manipulação da DOM.
+Métodos jQuery com exemplos práticos desta biblioteca **JS** que ajudam muito no desenvolvimento e manipulação da DOM.
 
 > Todos os exemplos deste repositório foram extraídos da API do jQuery no site oficial da biblioteca
 
