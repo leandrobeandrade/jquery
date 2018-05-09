@@ -5,6 +5,8 @@ Métodos do jQuery com exemplos práticos desta biblioteca **JS** que ajudam mui
 
 > Para acesso da API visite este [link](http://api.jquery.com/)
 
+> Os métodos considerados **descontinuados [deprecated]** não foram relacionados.
+
 
 ## Repositório
 
