@@ -8,5 +8,6 @@ Métodos do jQuery com exemplos práticos desta biblioteca **JS** que ajudam mui
 
 ## Repositório
 
-* Seletores Avançados - Encontram-se todos os seletores avançados jQuery, com o seus funcionamentos e exemplos de uso.
+* Seletores Avançados - Encontram-se todos os seletores avançados jQuery, com seus funcionamentos e exemplos de uso.
+* References - Todas as referências da API em português, menos seletores avançados.
 * Arquivos HTML - Encontram-se arquivos com os métodos sendo utilizados de uma maneira visual e prática.
