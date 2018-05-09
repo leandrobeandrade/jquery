@@ -1,3 +1,5 @@
+# A
+
 **.add()** - Cria um novo objeto jQuery com elementos adicionados ao conjunto de elementos correspondentes.
 
 **.addBack()** - Adiciona o conjunto anterior de elementos da pilha ao conjunto atual, opcionalmente filtrado por um seletor.
@@ -25,6 +27,8 @@
 **.appendTo()** - Insira todos os elementos no conjunto de elementos correspondentes no final do destino.
 
 **.attr()** - Obtenha o valor de um atributo para o primeiro elemento no conjunto de elementos correspondentes ou defina um ou mais atributos para cada elemento correspondente.
+
+# B
 
 **.before()** - Insira conteúdo, especificado pelo parâmetro, antes de cada elemento no conjunto de elementos correspondentes.
 
