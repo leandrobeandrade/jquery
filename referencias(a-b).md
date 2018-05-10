@@ -28,7 +28,7 @@
 
 **.attr()** - Obtenha o valor de um atributo para o primeiro elemento no conjunto de elementos correspondentes ou defina um ou mais atributos para cada elemento correspondente.
 
-# B
+# B 
 
 **.before()** - Insira conteúdo, especificado pelo parâmetro, antes de cada elemento no conjunto de elementos correspondentes.
 
