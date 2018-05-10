@@ -30,7 +30,7 @@
 
 **.clone()** - Crie uma cópia detalhada do conjunto de elementos correspondentes.
 
-**.closest()** - Para cada elemento no conjunto, obtenha o primeiro elemento que corresponda ao seletor testando o próprio elemento e percorrendo seus ancestrais na árvore DOM.
+**.closest()** - Para cada elemento no conjunto, obtenha o primeiro elemento que corresponda ao seletor testando o próprio elemento e percorrendo seus ancestrais na árvore DOM. 
 
 **.contents()** - Obter os filhos de cada elemento no conjunto de elementos correspondentes, incluindo nós de texto e comentário.
 
