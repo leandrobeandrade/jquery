@@ -32,7 +32,7 @@
 
 **event.relatedTarget** - O outro elemento DOM envolvido no evento, se houver.
 
-**event.result** - O último valor retornado por um manipulador de eventos que foi acionado por esse evento, a menos que o valor fosse indefinido.
+**event.result** - O último valor retornado por um manipulador de eventos que foi acionado por esse evento, a menos que o valor fosse indefinido. 
 
 **event.stopImmediatePropagation()** - Impede que o restante dos manipuladores seja executado e impede que o evento borbulhe na árvore DOM.
 
