@@ -39,3 +39,17 @@
 **.hover()** - Vincule um ou dois manipuladores aos elementos correspondentes para serem executados quando o ponteiro do mouse entrar e sair dos elementos.
 
 **.html** - Obtenha o conteúdo HTML do primeiro elemento no conjunto de elementos correspondentes ou defina o conteúdo HTML de cada elemento correspondente.
+
+# I
+
+**.index()** - Procure por um determinado elemento entre os elementos correspondentes.
+
+**.innerHeight()** - Obtenha a altura interna computada atual (incluindo preenchimento, mas não borda) para o primeiro elemento no conjunto de elementos correspondentes ou defina a altura interna de cada elemento correspondente.
+
+**.innerWidth()** - Obtenha a largura interna computada atual (incluindo preenchimento, mas não borda) para o primeiro elemento no conjunto de elementos correspondentes ou defina a largura interna de cada elemento correspondente.
+
+**.insertAfter()** - Insira todos os elementos no conjunto de elementos correspondentes após o destino.
+
+**.insertBefore()** - Insira todos os elementos no conjunto de elementos correspondentes antes do destino.
+
+**.is()** - Verifique o conjunto correspondente atual de elementos em relação a um seletor, elemento ou objeto jQuery e retorne "true" se pelo menos um desses elementos corresponder aos argumentos fornecidos.
