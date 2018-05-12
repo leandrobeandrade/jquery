@@ -44,16 +44,14 @@
 
 **jQuery.getJSON()** - Carregar dados codificados em JSON do servidor usando uma solicitação HTTP GET.
 
-**jQuery.getScript()** - 
+**jQuery.getScript()** - Carregue um arquivo JavaScript do servidor usando uma solicitação HTTP GET e execute-o.
 
-**** - 
+**jQuery.globalEval()** - Execute algum código JavaScript globalmente.
 
-**** -
+**jQuery.grep()** - Encontra os elementos de uma matriz que satisfazem uma função de filtro. O array original não é afetado.
 
-**** -
+**jQuery.hasData()** - Determine se um elemento possui algum dado do jQuery associado a ele.
 
-**** -
+**jQuery.holdReady()** - Mantém ou solta a execução do evento pronto do jQuery.
 
-**** -
-
-**** -
+**jQuery.htmlPrefilter()** - Modifique e filtre as strings HTML passadas pelos métodos de manipulação do jQuery.
