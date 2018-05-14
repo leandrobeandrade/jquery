@@ -40,4 +40,6 @@
 
 **.pushStack()** - Adicione uma coleção de elementos DOM na pilha do jQuery.
 
+# Q
+
 **.queue()** - Mostrar ou manipular a fila de funções a serem executadas nos elementos correspondentes.
