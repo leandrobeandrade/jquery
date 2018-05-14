@@ -34,8 +34,10 @@
 
 **.prevUntil()** - Obtenha todos os irmãos anteriores de cada elemento até, mas não incluindo, o elemento correspondido pelo seletor, nó DOM ou objeto jQuery.
 
-**.promessa()** -Retorna um objeto Promise para observar quando todas as ações de um determinado tipo ligado à coleção, enfileiradas ou não, foram concluídas.
+**.promise()** -Retorna um objeto Promise para observar quando todas as ações de um determinado tipo ligado à coleção, enfileiradas ou não, foram concluídas.
 
 **.prop()** - Obtenha o valor de uma propriedade para o primeiro elemento no conjunto de elementos correspondentes ou defina uma ou mais propriedades para cada elemento correspondente.
 
 **.pushStack()** - Adicione uma coleção de elementos DOM na pilha do jQuery.
+
+**.queue()** - Mostrar ou manipular a fila de funções a serem executadas nos elementos correspondentes.
