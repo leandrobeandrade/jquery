@@ -28,7 +28,7 @@
 
 **.prependTo()** - Insira todos os elementos no conjunto de elementos correspondentes no início do destino.
 
-**.prev()** - Obtenha o irmão imediatamente precedente de cada elemento no conjunto de elementos correspondentes. Se um seletor for fornecido, ele recuperará o irmão anterior somente se corresponder a esse seletor.
+**.prev()** - Obtenha o irmão imediatamente precedente de cada elemento no conjunto de elementos correspondentes. Se um seletor for fornecido, ele recuperará o irmão anterior somente se corresponder a esse seletor. 
 
 **.prevAll()** - Obtenha todos os irmãos anteriores de cada elemento no conjunto de elementos correspondentes, filtrados por um seletor.
 
