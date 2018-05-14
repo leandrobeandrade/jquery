@@ -32,7 +32,7 @@
 
 **.mouseup()** - Vincule um manipulador de eventos ao evento JavaScript "mouseup" ou acione esse evento em um elemento.
 
-**.next()** - Obtenha o irmão imediatamente seguinte de cada elemento no conjunto de elementos correspondentes. Se um seletor for fornecido, ele recuperará o próximo irmão apenas se corresponder a esse seletor.
+**.next()** - Obtenha o irmão imediatamente seguinte de cada elemento no conjunto de elementos correspondentes. Se um seletor for fornecido, ele recuperará o próximo irmão apenas se corresponder a esse seletor. 
 
 **.nextAll()** - Obtenha todos os irmãos seguintes de cada elemento no conjunto de elementos correspondentes, filtrados por um seletor.
 
