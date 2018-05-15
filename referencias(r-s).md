@@ -29,12 +29,22 @@
 
 **.select()** - Vincule um manipulador de eventos ao evento JavaScript "select" ou acione esse evento em um elemento.
 
-**** -
+**.serialize()** - Codifique um conjunto de elementos de formulário como uma string para envio.
 
-**** -
+**.serializeArray()** - Codifique um conjunto de elementos de formulário como uma matriz de nomes e valores.
 
-**** -
+**.show()** - Exibe os elementos correspondentes.
 
-**** -
+**.siblings()** - Obtenha os irmãos de cada elemento no conjunto de elementos correspondentes, opcionalmente filtrados por um seletor.
 
-**** -
+**.slice()** - Reduza o conjunto de elementos correspondentes para um subconjunto especificado por um intervalo de índices.
+
+**.slideDown()** - Exibe os elementos correspondentes com um movimento deslizante.
+
+**.slideToggle()** - Exibe ou oculta os elementos correspondentes com um movimento deslizante.
+
+**.slideUp()** - Esconda os elementos combinados com um movimento deslizante.
+
+**.stop()** - Pare a animação atualmente em execução nos elementos correspondentes.
+
+**.submit()** - Vincule um manipulador de eventos ao evento JavaScript "submit" ou acione esse evento em um elemento. 
