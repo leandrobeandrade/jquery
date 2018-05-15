@@ -47,4 +47,4 @@
 
 **.stop()** - Pare a animação atualmente em execução nos elementos correspondentes.
 
-**.submit()** - Vincule um manipulador de eventos ao evento JavaScript "submit" ou acione esse evento em um elemento. 
+**.submit()** - Vincule um manipulador de eventos ao evento JavaScript "submit" ou acione esse evento em um elemento.  
