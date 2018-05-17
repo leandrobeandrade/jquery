@@ -28,4 +28,4 @@
 
 **.wrapAll()** - Envolva uma estrutura HTML em torno de todos os elementos no conjunto de elementos correspondentes.
 
-**.wrapInner()** - Envolva uma estrutura HTML em torno do conteúdo de cada elemento no conjunto de elementos correspondentes.
+**.wrapInner()** - Envolva uma estrutura HTML em torno do conteúdo de cada elemento no conjunto de elementos correspondentes. 
