@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 27</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<style>
+		p {
+			border: solid 1px blue;
+		}
+		.starthidden {
+			display: none;
+		}
+		.div {
+			height: 50px;
+			width: 100px;
+			background-color: red;
+			float: left; 
+		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery26.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery28.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div class="form-group">
+		<button class="btn btn-info" id="btn1">.trigger("focus")</button>
+		<button class="btn btn-warning" id="btn2">.triggerHandler("focus")</button><br><br>
+		<input class="form-control" type="text" id="input1">
+		<span></span>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-success" id="btn3">wrap/unwrap</button>
+		<p><h5>OI</h5></p>
+		<p><h5>MUNDO</h5></p>
+		<p><h5>!!!!!!</h5></p>
+	</div><hr>
+
+	<div>
+		<form class="form-inline">	
+			<div class="form-group">
+		  		<button type="button" class="btn btns">Vendo</button>
+		  		<button type="button" class="btn btns">Texto</button>
+		  		<button type="button" class="btn btns">Input</button>
+				<input type="text" class="form-control" id="input2">
+			</div>
+		</form>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-dark">Clique</button><br>
+		<div class="div"></div>
+		<div class="div starthidden"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div" style="display:none;"></div>
+		<cite>Mesmo depois de vis&iacute;veis, divs que estavam escondidas n&atilde;o podem ficar amarelas</cite>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$("#btn1").click(function() {
+  				$("#input1").trigger("focus");
+			});
+			$("#btn2").click(function() {
+  				$("#input1").triggerHandler("focus");										// triggerHandler()
+			});
+			$("#input1").focus(function() {
+  				$("<span>Focado!</span>").appendTo("span").fadeOut(1000);
+			});
+
+			var tags = $("h5");
+			$("#btn3").click(function() {
+  				if (tags.parent().is("p")) {
+    				tags.unwrap();															// unwrap()
+  				} else {
+    				tags.wrap("<p></p>");													// wrap()
+ 				}
+			});
+
+			$(".btns").click(function() {
+  				var text = $(this).text();
+  				$("#input2").val(text);														// val()
+			});
+
+			$(".div:visible").click(function() {											// :visible
+  				$(this).css("background-color","yellow");
+			});
+			$(".btn-dark").click(function() {
+  				$("div:hidden").show("fast");												// :hidden
+			});
+
+		})
+	</script>
+
+</body>
+</html>

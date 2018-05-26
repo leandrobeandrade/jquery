@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 25</title>
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<style>
+		#div {
+			padding-bottom: 120px;
+		}
+		#div1, #div2 {
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+			display: none;
+			float: left;
+		}
+		.bloco {
+			background-color: #abc;
+    		border: 2px solid black;
+    		width: 200px;
+    		height: 80px;
+    		margin: 10px;
+		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery24.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery26.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<ul id="ul">
+  			<li>item 1</li>
+  			<li>item 2</li>
+  			<li>item 3</li>
+  			<li>item 4</li>
+  			<li>item 5</li>
+		</ul>
+	</div><hr>
+
+	<div id="div">
+		<button class="btn btn-success">Clique</button><br>
+		<div id="div1"></div>
+		<div id="div2"></div>
+	</div><hr>
+
+	<div>	
+		<form class="form-inline">
+			<div class="form-group">
+		  		<button type="button" class="btn botao">Esconder o primeiro</button>
+		  		<input class="form-control" type="text" value="UM">
+		  	</div>
+		</form>
+		<form class="form-inline">
+		  	<div class="form-group">	
+		  		<button type="button" class="btn botao">Esconder o segundo</button>
+		  		<input class="form-control" type="text" value="DOIS">
+		  	</div>
+		</form>
+		<form class="form-inline">
+		  	<div class="form-group">
+		  		<button type="button" class="btn botao">Esconder o terceiro</button>
+		  		<input class="form-control" type="text" value="TRES">
+			</div>
+		</form>
+		<code></code>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-info" id="toggle">slideToggle()</button>
+		<div class="bloco"></div>
+	</div>
+
+	<script>
+		$(document).ready(function() {		
+			$("#ul li").slice(2, 4).css("background-color", "red");								// slice()
+
+			$(".btn-success").on("click", function() {							
+				$("#div1").slideDown("slow");													// slideDown()
+			});
+
+			$(".btn-success").on("click", function() {
+				$("#div2").slideToggle("slow");													// slideToggle()
+			});
+
+			$(".botao").click(function() {
+  				$(this).parent().slideUp("slow", function() {									// slideUp()
+  					$("code").text($(".botao", this).text() + " foi completada.");			
+  				});
+			});
+
+			var bloco = $(".bloco");
+ 			$("#toggle").on("click", function() {
+  				bloco.stop().slideToggle(1000);													// slideToggle()
+			});
+
+		})
+	</script>
+
+</body>
+</html>
