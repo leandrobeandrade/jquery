@@ -11,63 +11,63 @@
 	
 	<style>
 		#p1 {
-		    position: relative;
-		    width: 400px;
+		    	position: relative;
+		    	width: 400px;
 			height: 70px;
 		}
   		#div1 {
-		    position: absolute;
-		    width: 400px;
-		    height: 120px;
-		    font-size: 36px;
-		    color: yellow;
-		    background: red;
-		    display: none;
-		    margin-left: -6px;
-		    margin-top: -100px;
+		    	position: absolute;
+		    	width: 400px;
+		    	height: 120px;
+		    	font-size: 36px;
+		    	color: yellow;
+		    	background: red;
+		    	display: none;
+		    	margin-left: -6px;
+		    	margin-top: -100px;
   		}
   		#strong1 {
-    		display: none;
-    		position: absolute;
-    		margin-top: 6%;
-    		padding-left: 30%;
+    			display: none;
+    			position: absolute;
+    			margin-top: 6%;
+    			padding-left: 30%;
   		}
   		span {
-    		cursor: pointer;
+    			cursor: pointer;
   		}
   		span.hilite {
-    		background: yellow;
+    			background: yellow;
   		}
   		#div2 {
   			margin-top: 20px;
     		display: inline;
-    		color: red;
+    			color: red;
   		}
 		#p2 {
-    		width: 80px;
-    		margin: 0;
-    		padding: 5px;
+    			width: 80px;
+    			margin: 0;
+    			padding: 5px;
   		}
   		.div {
-    		width: 40px;
+    			width: 40px;
    		 	height: 40px;
-    		position: absolute;
-    		margin-top: 26.9%;
+    			position: absolute;
+    			margin-top: 26.9%;
   		}
   		#um {
-    		top: 0;
-    		left: 0;
-    		background: #f00;
+    			top: 0;
+    			left: 0;
+    			background: #f00;
   		}
   		#dois {
-    		top: 20px;
-    		left: 20px;
-    		background: #0f0;
+    			top: 20px;
+    			left: 20px;
+    			background: #0f0;
   		}
   		#tres {
-    		top: 40px;
-    		left:40px;
-    		background:#00f;
+    			top: 40px;
+    			left:40px;
+    			background:#00f;
   		}
 	</style>
 
@@ -135,45 +135,45 @@
 	<script>
 		$(document).ready(function() {
 			$("#a").click(function() {
-  				$("#div1").fadeIn(3000, function() {										// fadeIn()
+  				$("#div1").fadeIn(3000, function() {							// fadeIn()
     				$("#strong1").fadeIn(100);
   				});
  			return false;
 			});
 
 			$(".span").click(function() {
-  				$(this).fadeOut(1000, function() {											// fadeOut()
+  				$(this).fadeOut(1000, function() {							// fadeOut()
     				$("#div2").text("'" + $(this).text() + "' foi faded!");					
-    				$(this).remove();														// remove()
+    				$(this).remove();									// remove()
   				});
 			});
 			$(".span").hover(function() {													
-  				$(this).addClass("hilite");													// addClass()
+  				$(this).addClass("hilite");								// addClass()
 			}, function() {
-  				$(this).removeClass("hilite");												// removeClass()
+  				$(this).removeClass("hilite");								// removeClass()
 			});
 
 			$(".div").click(function() {
-  				$(this).fadeTo("fast", Math.random());										// fadeTo()
+  				$(this).fadeTo("fast", Math.random());							// fadeTo()
 			});
 
-			$("button:first").click(function() {											// :first
-  				$("b:first").fadeToggle("slow", "linear");									// fadeToggle()
+			$("button:first").click(function() {								// :first
+  				$("b:first").fadeToggle("slow", "linear");						// fadeToggle()
 			});
-			$("button:last").click(function() {												// :last
+			$("button:last").click(function() {								// :last
   				$("b:last").fadeToggle("fast", function() {
     				$("#log").append("<i>finalizado </i>");
   				});
 			});
 
-			$(".li1").filter(":even").css({													// filter()
+			$(".li1").filter(":even").css({									// filter()
 				"background-color": "red",
 				"color": "#fff"
 				});
 
 			$(".li2").filter(function(index) {
     			return $("em", this).length === 1;
-  			}).css({																		// css()
+  			}).css({											// css()
   				"background-color": "red",
   				"color": "#fff"
   				});
