@@ -11,15 +11,15 @@
 
 	<style>
 		td {
-    		width: 40px;
-    		background: green;
+    			width: 40px;
+    			background: green;
   		}
   		b, span, i{
-    		padding: .5em;
-    		border: 1px solid;
+    			padding: .5em;
+    			border: 1px solid;
   		}
   		b {
-    		color: blue;
+    			color: blue;
   		}
   		.div1 {
   			height: 60px;
@@ -28,7 +28,7 @@
   			float: left;
   		}
   		.before {
-    		border: solid 1px red;
+    			border: solid 1px red;
   		}
 	</style>
 
@@ -104,13 +104,13 @@
 
 	<script>
 		$(document).ready(function() {
-			$("p").parent(".selected").css("background", "yellow");								// parent()
+			$("p").parent(".selected").css("background", "yellow");						// parent()
 
-			$("td:parent").fadeTo(1500, 0.3);													// :parent
+			$("td:parent").fadeTo(1500, 0.3);								// :parent
 
-			var parentEls = $("b").parents().map(function() {									// parents()
-    			return this.tagName;
-  			}).get().join(", ");																// get()
+			var parentEls = $("b").parents().map(function() {						// parents()
+    				return this.tagName;
+  			}).get().join(", ");										// get()
 			$("b").append("<code>" + parentEls + "</code>");
 
 			$("li.item-a").parentsUntil(".level-1").css("background-color", "#D69486");			// parentsUntil()
@@ -118,11 +118,11 @@
 
 			var p = $("#p1");
 			var position = p.position();
-			$("#p2").text("left: " + position.left + ", top: " + position.top);					// position()
+			$("#p2").text("left: " + position.left + ", top: " + position.top);				// position()
 
-			$("li.third-item").prev().css("background-color", "grey");							// prev()
+			$("li.third-item").prev().css("background-color", "grey");					// prev()
 
-			$("div:last").prevAll().addClass("before");											// prevAll()
+			$("div:last").prevAll().addClass("before");							// prevAll()
 
 		})
 	</script>
