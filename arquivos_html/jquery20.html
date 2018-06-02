@@ -15,28 +15,28 @@
 		}
 		.abs {
 			width: 200px;
-    		height: 50px;
-    		margin-left: 400px;
-    		margin-top: -50px;
-    		background-color: green;
-    		cursor: pointer;
+    			height: 50px;
+    			margin-left: 400px;
+    			margin-top: -50px;
+    			background-color: green;
+    			cursor: pointer;
 		}
 		i, code:hover {
 			cursor: pointer;
 		}
 		.div {
-    		width: 100px;
-    		height: 80px;
-    		margin: 5px;
-    		float: left;
-    		background: #b9e;
+    			width: 100px;
+    			height: 80px;
+    			margin: 5px;
+    			float: left;
+    			background: #b9e;
   		}
   		.div2 {
-    		width: 100px;
-    		height: 80px;
-    		margin: 5px;
-    		float: left;
-    		background: #b9e;
+    			width: 100px;
+    			height: 80px;
+    			margin: 5px;
+    			float: left;
+    			background: #b9e;
   		}
   		p:first-child {
   			width: 50%;
@@ -120,26 +120,26 @@
   				$("pre").show().fadeOut("slow");
 			}
 			$("#bind").click(function() {
-  				$("div").on("click", "#theone", flash).find("#theone").text("Pode Clicar!");	// on()
+  				$("div").on("click", "#theone", flash).find("#theone").text("Pode Clicar!");		// on()
 			});
 			$("#unbind").click(function() {	
   				$("div").off("click", "#theone", flash).find("#theone").text("Nada...");   		// off()
 			});
 
 			$("*", document.body).click(function(event) {
-  				var offset = $(this).offset();													// offset()
-  				event.stopPropagation();													// stopPropagation()
+  				var offset = $(this).offset();								// offset()
+  				event.stopPropagation();								// stopPropagation()
   				$("#result").text(this.tagName +" coords (" + offset.left + ", " + offset.top + ")");
 			});
 
-			$("li .item-a").offsetParent().css("background-color", "yellow");					// offsetParent()
+			$("li .item-a").offsetParent().css("background-color", "yellow");				// offsetParent()
 
-			$(".div span:only-child").text("Span única").css("border", "2px blue solid");		// :only-child
+			$(".div span:only-child").text("Span única").css("border", "2px blue solid");			// :only-child
 
-			$(".div2 span:only-of-type").text("Span única").css("border", "2px blue solid");	// :only-of-type
+			$(".div2 span:only-of-type").text("Span única").css("border", "2px blue solid");		// :only-of-type
 
 			var p = $("#div2 p:first");
-			$("#p2").text("outerHeight: " + p.outerHeight() +" , outerHeight(true): " + 		// outerHeight()
+			$("#p2").text("outerHeight: " + p.outerHeight() +" , outerHeight(true): " + 			// outerHeight()
 				p.outerHeight(true)); 
 			$("#p3").text("outerWidth: " + p.outerWidth() +" , outerWidth( true ): " + p.outerWidth(true));
 
