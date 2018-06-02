@@ -11,30 +11,30 @@
 
 	<style>
 		span{
-    		width: 80px;
-    		height: 80px;
-    		margin: 10px;
-    		float: left;
-    		background: yellow;
-    		border: 2px solid white;
+    			width: 80px;
+    			height: 80px;
+    			margin: 10px;
+    			float: left;
+    			background: yellow;
+    			border: 2px solid white;
   		}
   		.green {
-    		background: #8f8;
+    			background: #8f8;
   		}
   		.gray {
-    		background: #ccc;
+    			background: #ccc;
   		}
   		#blueone {
    	 		background: #99f;
   		}
   		.div {
-    		float: left;
+    			float: left;
   		}
   		strong {
   			color: red;
   		}
   		.div2 {
-    		float: left;
+    			float: left;
   		}
   		.div4 {
   			float: left;
@@ -163,24 +163,21 @@
 
 	<script>
 		$(document).ready(function() {
-			$("span").not(".green, #blueone").css("border-color", "red");						          // not()
+			$("span").not(".green, #blueone").css("border-color", "red");						// not()
 
-			$("input:not(:checked) + samp").css("background-color", "yellow");					      // :not
-			$("input").attr("disabled", "disabled");											                    // atrr()
+			$("input:not(:checked) + samp").css("background-color", "yellow");					// :not
+			$("input").attr("disabled", "disabled");								// atrr()
 
-			$(".ul li:nth-child(2)").append("<strong> - 2nd!</strong>");						          // :nth-child()
+			$(".ul li:nth-child(2)").append("<strong> - 2nd!</strong>");						// :nth-child()
 
-			$(".ul2 li:nth-last-child(2)").append("<strong> - 2nd a partir do último!</strong>");
-      // :nth-last-child()
+			$(".ul2 li:nth-last-child(2)").append("<strong> - 2nd a partir do último!</strong>");			// :nth-last-child()
 
-			$(".div3 dfn:nth-of-type(2)").append("<strong> - 2nd irmão de dfn</strong>").addClass("nth"); 
-      // :nth-of-type()
+			$(".div3 dfn:nth-of-type(2)").append("<strong> - 2nd irmão de dfn</strong>").addClass("nth");		// :nth-of-type()
 
-			$(".div4 ul li:nth-last-of-type(2)").append("<strong> - 2nd do último!</strong>");	
-      // :nth-last-of-type()
+			$(".div4 ul li:nth-last-of-type(2)").append("<strong> - 2nd do último!</strong>");			// :nth-last-of-type()
 
 			var n = 0;
-			$(".target").one("click mouseenter", function() {                                 // one()
+			$(".target").one("click mouseenter", function() {                                			// one()
   				$(".count").html(++n);
 			});
 
