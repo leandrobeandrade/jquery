@@ -14,12 +14,12 @@
  			padding-bottom: 50px;
  		}
 		.div {
-    		height: 50px;
-    		width: 50px;
-    		float: left;
-    		margin-right: 10px;
-    		display: none;
-    		background-color: #090;
+    			height: 50px;
+    			width: 50px;
+    			float: left;
+    			margin-right: 10px;
+    			display: none;
+    			background-color: #090;
  		}
  		.form-control {
  			width: 50%;
@@ -74,29 +74,29 @@
 
 	<script>
 		$(document).ready(function() {
-			$("#term-2").prevUntil("dt").css("background-color", "#ccc");						// prevUntil()
+			$("#term-2").prevUntil("dt").css("background-color", "#ccc");					// prevUntil()
 			var term1 = document.getElementById("term-1");
 			$("#term-3").prevUntil(term1, "dd").css("color", "red");
 
 			$("button:first").on("click", function() {
 				$("p").append("Começando...");
  				$(".div").each(function(i) {
-    				$(this).fadeIn().fadeOut(1000 * (i + 1));
+    					$(this).fadeIn().fadeOut(1000 * (i + 1));
   				});
- 				$(".div").promise().done(function() {											// promisse()
-    				$("p").append(" Finalizado! ");
+ 				$(".div").promise().done(function() {							// promisse()
+    					$("p").append(" Finalizado! ");
   				});
 			});
 
-			$("input[type='checkbox']").prop({disabled: true});									// prop()
+			$("input[type='checkbox']").prop({disabled: true});						// prop()
 
 			(function() {																		
   				var inputTitle = $("#inputTitle").attr("title");
   				$("button:last").click(function() {
-    				var input = $(this).next();
+    					var input = $(this).next();
  
     				if (input.attr("title") === inputTitle) {
-     					 input.removeAttr("title")												// removeAttr()
+     					 input.removeAttr("title")							// removeAttr()
     				} else {
      					input.attr("title", inputTitle);
     				}
