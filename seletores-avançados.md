@@ -72,7 +72,7 @@
 	
 ### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
 
-	$( "lt:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
+	$( "td:lt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
 	
 ### $( ":nth-child(index)" ) - Seleciona elementos a partir de determinada localização.
 
