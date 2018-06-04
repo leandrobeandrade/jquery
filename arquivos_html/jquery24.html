@@ -48,7 +48,8 @@
 	</div><hr>
 
 	<div class="form-group">
-		<textarea class="form-control">As expressões regulares na forma literal são compiladas quando o script é carregado. Esta forma de construção possui melhor performance quando a expressão regular utilizada é uma constante, ou seja, não muda durante a execução.
+		<textarea class="form-control">As expressões regulares na forma literal são compiladas quando o script é carregado.
+			Esta forma de construção possui melhor performance quando a expressão regular utilizada é uma constante, ou seja, não muda durante a execução.
 		</textarea>
   		<code></code>
 	</div><hr>
@@ -94,25 +95,25 @@
 
 	<script>
 		$(document).ready(function() {
-			$("div .demo").scrollLeft(300);														// scrollLeft()
+			$("div .demo").scrollLeft(300);									// scrollLeft()
 
-			$("div .mode").scrollTop(300);														// scrollTop()
+			$("div .mode").scrollTop(300);									// scrollTop()
 
 			$("textarea").select(function() {
-				var txt = $(this).val();														// select()
+				var txt = $(this).val();								// select()
   				$("code").text(txt).show().fadeOut(1000);
 			});
 
 			$("select").change(function() {
     				var str = "";
-    				$("select option:selected").each(function() {									// :selected
+    				$("select option:selected").each(function() {						// :selected
       					str += $(this).text() + " ";
     				});
     				$("b").text(str);
-  			}).trigger("change");																// trigger()
+  			}).trigger("change");										// trigger()
 
   			function showValues() {
-    				var str = $("#form1").serialize();												// serialize()
+    				var str = $("#form1").serialize();							// serialize()
     				$("em").text(str);
   			}
  			$("#check1, #check2").on("click", showValues);
@@ -128,7 +129,7 @@
  			$(":checkbox, :radio").click(showValue);
   			showValue();
 
-  			$("samp").siblings(".selected").css("background", "yellow");						// siblings()
+  			$("samp").siblings(".selected").css("background", "yellow");					// siblings()
 
 		})
 	</script>
