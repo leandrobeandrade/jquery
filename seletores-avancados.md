@@ -1,10 +1,10 @@
 ### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
 
-	$( "input" ).comandos  // seleciona inputs
+	$( "input" ).prop("required", true)  // seleciona inputs e define a propriedade required como true
 	
 ### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
 
-	$( "div:button" ).comandos  //  seleciona todos os botões dentro da div
+	$( "div:button" ).css("color","red")  //  seleciona todos os botões dentro da div e define uma cor vermelha
 	
 ### $( ":not()" ) - Seleciona elementos não encontrados nos parâmetros passados.
 	
