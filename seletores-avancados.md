@@ -1,4 +1,4 @@
-### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+### $( "attribute" ) - Seleciona elementos que possuam a propriedade especificada com qualquer valor.
 
 	$( "input" ).prop("required", true)  // seleciona inputs e define a propriedade required como true
 	
@@ -98,6 +98,10 @@
 	
 	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
 	
+### $( "input[atribute='value']" ) - Seleciona com o atributo que tenha o valor especificado.
+
+	$( "input[name='meuInput']" ).comandos  // seleciona o input com o atributo name igual meuInput.
+ 	
 ### $( "[attribute|='value']" ) - Seleciona elementos que possuam o atributo especificado com um valor igual a uma string determinada ou que começa com essa seqüência seguida de um hífen (-)
 
 	$( "input[name|='en']" ).comandos  // seleciona en, en-UK
