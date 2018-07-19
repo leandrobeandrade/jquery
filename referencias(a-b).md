@@ -6,7 +6,7 @@
 
 **.addClass()** - Adiciona as classes especificadas a cada elemento no conjunto de elementos correspondentes.
 
-**.after()** - Insera conteúdo, especificado pelo parâmetro, após cada elemento no conjunto de elementos correspondentes.
+**.after()** - Insere conteúdo, especificado pelo parâmetro, após cada elemento no conjunto de elementos correspondentes.
 
 **.ajaxComplete()** - Registra um manipulador a ser chamado quando as solicitações do Ajax forem concluídas. Este é um evento do Ajax.
 
@@ -26,7 +26,7 @@
 
 **.appendTo()** - Insere todos os elementos no conjunto de elementos correspondentes no final do destino.
 
-**.attr()** - Obtenha o valor de um atributo para o primeiro elemento no conjunto de elementos correspondentes ou defina um ou mais atributos para cada elemento correspondente.
+**.attr()** - Obtem o valor de um atributo para o primeiro elemento no conjunto de elementos correspondentes ou defina um ou mais atributos para cada elemento correspondente.
 
 # B   
 
