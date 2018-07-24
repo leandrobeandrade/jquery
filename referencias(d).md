@@ -1,40 +1,40 @@
 # D
 
-**.data()** - Armazene dados arbitrários associados aos elementos correspondentes ou retorne o valor no armazenamento de dados nomeado para o primeiro elemento no conjunto de elementos correspondentes.
+**.data()** - Armazena dados arbitrários associados aos elementos correspondentes ou retorna o valor no armazenamento de dados nomeado para o primeiro elemento no conjunto de elementos correspondentes.
 
-**.dblclick()** - Vincule um manipulador de eventos ao evento JavaScript "dblclick" ou acione esse evento em um elemento.
+**.dblclick()** - Vincula um manipulador de eventos ao evento JavaScript "dblclick" ou aciona esse evento em um elemento.
 
-**deferred.always()** - Adicione manipuladores para serem chamados quando o objeto Deferred for resolvido ou rejeitado.
+**deferred.always()** - Adiciona manipuladores para serem chamados quando o objeto Deferred for resolvido ou rejeitado.
 
-**deferred.catch()** - Adicione manipuladores para serem chamados quando o objeto Deferred for rejeitado.
+**deferred.catch()** - Adiciona manipuladores para serem chamados quando o objeto Deferred for rejeitado.
 
-**deferred.done()** - Adicione manipuladores para serem chamados quando o objeto Deferred for resolvido.
+**deferred.done()** - Adiciona manipuladores para serem chamados quando o objeto Deferred for resolvido.
 
-**deferred.fail()** - Adicione manipuladores para serem chamados quando o objeto Deferred for rejeitado.
+**deferred.fail()** - Adiciona manipuladores para serem chamados quando o objeto Deferred for rejeitado.
 
-**deferred.notify()** - Chame os progressCallbacks em um objeto Deferred com os argumentos fornecidos.
+**deferred.notify()** - Chama os progressCallbacks em um objeto Deferred com os argumentos fornecidos.
 
-**deferred.notifyWith()** - Chame os progressCallbacks em um objeto Deferred com o contexto e argumentos fornecidos.
+**deferred.notifyWith()** - Chama os progressCallbacks em um objeto Deferred com o contexto e argumentos fornecidos.
 
-**deferred.progress()** - Adicione manipuladores para serem chamados quando o objeto Deferred gerar notificações de progresso.
+**deferred.progress()** - Adiciona manipuladores para serem chamados quando o objeto Deferred gerar notificações de progresso.
 
-**deferred.promise()** - Devolva o objeto Promisse de um Deferred.
+**deferred.promise()** - Devolve o objeto Promisse de um Deferred.
 
-**deferred.reject()** - Rejeite um objeto Deferred e chame qualquer failCallbacks com os argumentos fornecidos.
+**deferred.reject()** - Rejeita um objeto Deferred e chama qualquer failCallbacks com os argumentos fornecidos.
 
-**deferred.rejectWith()** - Rejeite um objeto Deferred e chame qualquer failCallbacks com o contexto e argumentos fornecidos.
+**deferred.rejectWith()** - Rejeita um objeto Deferred e chama qualquer failCallbacks com o contexto e argumentos fornecidos.
 
 
-**deferred.resolve()** - Resolva um objeto Deferred e chame qualquer doneCallbacks com os argumentos fornecidos.
+**deferred.resolve()** - Resolve um objeto Deferred e chama qualquer doneCallbacks com os argumentos fornecidos.
 
-**deferred.resolveWith()** - Resolva um objeto Deferred e chame qualquer doneCallbacks com o contexto e argumentos fornecidos.
+**deferred.resolveWith()** - Resolve um objeto Deferred e chama qualquer doneCallbacks com o contexto e argumentos fornecidos.
 
-**deferred.state()** - Determine o estado atual de um objeto Deferred.
+**deferred.state()** - Determina o estado atual de um objeto Deferred.
 
-**deferred.then()** - Adicione manipuladores a serem chamados quando o objeto Deferred for resolvido, rejeitado ou ainda em andamento.
+**deferred.then()** - Adiciona manipuladores a serem chamados quando o objeto Deferred for resolvido, rejeitado ou ainda em andamento.
 
-**.delay()** - Defina um temporizador para atrasar a execução de itens subseqüentes na fila.
+**.delay()** - Define um temporizador para atrasar a execução de itens subseqüentes na fila.
 
-**.dequeue()** - Execute a próxima função na fila para os elementos correspondentes.
+**.dequeue()** - Executa a próxima função na fila para os elementos correspondentes.
 
-**.detach()** - Remova o conjunto de elementos correspondentes do DOM.
+**.detach()** - Remove o conjunto de elementos correspondentes do DOM.
