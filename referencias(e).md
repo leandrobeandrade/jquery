@@ -1,12 +1,12 @@
 # E
 
-**.empty()** - Remova todos os nós filhos do conjunto de elementos correspondentes do DOM.
+**.empty()** - Remove todos os nós filhos do conjunto de elementos correspondentes do DOM.
 
-**.end()** - Termine a operação de filtragem mais recente na cadeia atual e retorne o conjunto de elementos correspondentes ao seu estado anterior.
+**.end()** - Termina a operação de filtragem mais recente na cadeia atual e retorna o conjunto de elementos correspondentes ao seu estado anterior.
 
-**.eq()** - Reduza o conjunto de elementos correspondentes para o índice especificado.
+**.eq()** - Reduz o conjunto de elementos correspondentes para o índice especificado.
 
-**.error()** - Vincule um manipulador de eventos ao evento JavaScript "error".
+**.error()** - Vincula um manipulador de eventos ao evento JavaScript "error".
 
 **event.currentTarget** - O elemento DOM atual dentro da fase de bubbling do evento.
 
