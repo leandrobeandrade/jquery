@@ -1,6 +1,6 @@
 # E
 
-**.empty()** - Remove todos os nós filhos do conjunto de elementos correspondentes do DOM.
+**.empty()** - Remova todos os nós filhos do conjunto de elementos correspondentes do DOM.
 
 **.end()** - Termina a operação de filtragem mais recente na cadeia atual e retorna o conjunto de elementos correspondentes ao seu estado anterior.
 
