@@ -2,7 +2,7 @@
 
 **.fadeIn()** - Exibe os elementos correspondentes, desbotando-os para opacos.
 
-**.fadeOut()** - Oculte os elementos correspondentes, tornando-os transparentes.
+**.fadeOut()** - Oculta os elementos correspondentes, tornando-os transparentes.
 
 **.fadeTo()** - Ajuste a opacidade dos elementos correspondentes.
 
