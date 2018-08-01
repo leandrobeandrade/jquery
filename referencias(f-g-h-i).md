@@ -1,6 +1,6 @@
 # F
 
-**.fadeIn()** - Exibe os elementos correspondentes, desbotando-os para opacos.
+**.fadeIn()** - Exibe os elementos correspondentes, desbotando-os para opacos. 
 
 **.fadeOut()** - Oculta os elementos correspondentes, tornando-os transparentes.
 
