@@ -12,7 +12,7 @@
 
 **.length** - O número de elementos no objeto jQuery.
 
-**.load()** - Carreguas os dados do servidor e coloca o HTML retornado no elemento correspondente.
+**.load()** - Carregua os dados do servidor e coloca o HTML retornado no elemento correspondente.
 
 # M 
 
