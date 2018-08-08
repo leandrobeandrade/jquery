@@ -1,50 +1,50 @@
 
 # R
 
-**.ready()** - Especifique uma função para executar quando o DOM estiver totalmente carregado.
+**.ready()** - Especifica uma função para executar quando o DOM estiver totalmente carregado.
 
-**.remove()** - Remova o conjunto de elementos correspondentes do DOM.
+**.remove()** - Remove o conjunto de elementos correspondentes do DOM.
 
-**.removeAttr()** - Remova um atributo de cada elemento no conjunto de elementos correspondentes.
+**.removeAttr()** - Remove um atributo de cada elemento no conjunto de elementos correspondentes.
 
-**.removeClass()** - Remova uma única classe, várias classes ou todas as classes de cada elemento no conjunto de elementos correspondentes.
+**.removeClass()** - Remove uma única classe, várias classes ou todas as classes de cada elemento no conjunto de elementos correspondentes.
 
-**.removeData()** - Remova um dado armazenado anteriormente.
+**.removeData()** - Remove um dado armazenado anteriormente.
 
-**.removeProp()** - Remova uma propriedade para o conjunto de elementos correspondentes.
+**.removeProp()** - Remove uma propriedade para o conjunto de elementos correspondentes.
 
-**.replaceAll()** - Substitua cada elemento de destino pelo conjunto de elementos correspondentes.
+**.replaceAll()** - Substitui cada elemento de destino pelo conjunto de elementos correspondentes.
 
-**.replaceWith()** - Substitua cada elemento no conjunto de elementos correspondentes pelo novo conteúdo fornecido e retorne o conjunto de elementos que foi removido.
+**.replaceWith()** - Substitui cada elemento no conjunto de elementos correspondentes pelo novo conteúdo fornecido e retorna o conjunto de elementos que foi removido.
 
-**.resize()** - Vincule um manipulador de eventos ao evento JavaScript "resize" ou acione esse evento em um elemento.
+**.resize()** - Vincula um manipulador de eventos ao evento JavaScript "resize" ou aciona esse evento em um elemento.
 
 # S
 
-**.scroll()** - Vincule um manipulador de eventos ao evento JavaScript de "scroll" ou acione esse evento em um elemento.
+**.scroll()** - Vincula um manipulador de eventos ao evento JavaScript de "scroll" ou aciona esse evento em um elemento.
 
-**.scrollLeft()** - Obtenha a posição horizontal atual da barra de rolagem do primeiro elemento no conjunto de elementos correspondentes ou defina a posição horizontal da barra de rolagem para cada elemento correspondente.
+**.scrollLeft()** - Obtem a posição horizontal atual da barra de rolagem do primeiro elemento no conjunto de elementos correspondentes ou define a posição horizontal da barra de rolagem para cada elemento correspondente.
 
-**.scrollTop()** - Obtenha a posição vertical atual da barra de rolagem do primeiro elemento no conjunto de elementos correspondentes ou defina a posição vertical da barra de rolagem para cada elemento correspondente.
+**.scrollTop()** - Obtem a posição vertical atual da barra de rolagem do primeiro elemento no conjunto de elementos correspondentes ou define a posição vertical da barra de rolagem para cada elemento correspondente.
 
-**.select()** - Vincule um manipulador de eventos ao evento JavaScript "select" ou acione esse evento em um elemento.
+**.select()** - Vincula um manipulador de eventos ao evento JavaScript "select" ou aciona esse evento em um elemento.
 
-**.serialize()** - Codifique um conjunto de elementos de formulário como uma string para envio.
+**.serialize()** - Codifica um conjunto de elementos de formulário como uma string para envio.
 
-**.serializeArray()** - Codifique um conjunto de elementos de formulário como uma matriz de nomes e valores.
+**.serializeArray()** - Codifica um conjunto de elementos de formulário como uma matriz de nomes e valores.
 
 **.show()** - Exibe os elementos correspondentes.
 
-**.siblings()** - Obtenha os irmãos de cada elemento no conjunto de elementos correspondentes, opcionalmente filtrados por um seletor.
+**.siblings()** - Obtem os irmãos de cada elemento no conjunto de elementos correspondentes, opcionalmente filtrados por um seletor.
 
-**.slice()** - Reduza o conjunto de elementos correspondentes para um subconjunto especificado por um intervalo de índices.
+**.slice()** - Reduz o conjunto de elementos correspondentes para um subconjunto especificado por um intervalo de índices.
 
 **.slideDown()** - Exibe os elementos correspondentes com um movimento deslizante.
 
 **.slideToggle()** - Exibe ou oculta os elementos correspondentes com um movimento deslizante.
 
-**.slideUp()** - Esconda os elementos combinados com um movimento deslizante.
+**.slideUp()** - Esconde os elementos combinados com um movimento deslizante.
 
-**.stop()** - Pare a animação atualmente em execução nos elementos correspondentes.
+**.stop()** - Para a animação atualmente em execução nos elementos correspondentes.
 
-**.submit()** - Vincule um manipulador de eventos ao evento JavaScript "submit" ou acione esse evento em um elemento.  
+**.submit()** - Vincula um manipulador de eventos ao evento JavaScript "submit" ou aciona esse evento em um elemento.  
