@@ -1,4 +1,4 @@
-### $( "attribute" ) - Seleciona elementos que possuam a propriedade especificada com qualquer valor. 
+### $( "attribute" ) - Seleciona elementos que possuam a propriedade especificada com qualquer valor.
 
 	$( "input" ).prop("required", true)  // seleciona inputs e define a propriedade required como true
 	
