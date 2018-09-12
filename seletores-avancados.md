@@ -92,7 +92,7 @@
 	
 ### ( "option:selected" ) - Seleciona itens selecionados em um select.
 
-	$( "select option:selected" ).comados  //  seleciona um ou mais elementos selecionados dentro de um select
+	$( "select option:selected" ).comados  //  seleciona um ou mais elementos selecionados dentro do select
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
