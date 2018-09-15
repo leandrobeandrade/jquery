@@ -1,6 +1,6 @@
-### $( "attribute" ) - Seleciona elementos que possuam o atributo especificado com qualquer valor.
+### $( "attribute" ) - Seleciona elementos que possuam a propriedade especificada com qualquer valor.
 
-	$( "input" ).comandos  // seleciona inputs
+	$( "input" ).prop("required", true)  // seleciona inputs e define a propriedade required como true
 	
 ### $( ":element" ) - Seleciona todos os elementos de todos os tipos.
 
@@ -8,23 +8,23 @@
 	
 ### $( ":not()" ) - Seleciona elementos não encontrados nos parâmetros passados.
 	
-	$( "input:not(:checked)" ).css("background-color","red");  //  seleciona inputs com o atributo checked falso
+	$( "input:not(:checked)" ).comandos  //  seleciona inputs com o atributo checked falso
 	
 ### $( ":lang()" ) - Seleciona determinada linguagem no html.
 
-	$( "div:lang(pt-br)" ).addClass("yellow");  //  seleciona a div com o atributo lang pt-br e adiciona a classe
+	$( "div:lang(pt-br)" ).comandos  //  seleciona a div com o atributo lang pt-br
 
 ### $( ":disabled" ) - Seleciona elementos com o atributo disabled.
 
-	$( "input:disabled" ).val("Input desabilitado!");  //  seleciona inputs desabilitado
+	$( "input:disabled" ).comandos  //  seleciona inputs desabilitado
 	
 ### $( ":empty" ) - Seleciona elementos vazios.
 	
-	$( "p:empty" ).css("background-color","red");  //  seleciona p vazios
+	$( "p:empty" ).comandos  //  seleciona p vazios
 	
 ### $( ":visible" ) - Seleciona elementos que não estão com display none.
 
-	$( "div:visible" ).css("background-color","red");  //  seleciona divs visíveis no html
+	$( "div:visible" ).comandos  //  seleciona divs visíveis no html
 	
 ### $( ":hidden" ) - Seleciona elementos que estão com display none.
 
@@ -32,72 +32,76 @@
 	
 ### $( ":contains(texto)" ) - Seleciona todos os elementos que possuem um determinado texto passado no parâmetro.
 
-	$( "p:contains('Teste')" ).css("color", "red");  //  seleciona tags p que contem a palavra Teste
+	$( "p:contains('Teste')" ).comandos  //  seleciona tags p que contem a palavra Teste
 	
 ### $( ":eq(index)" ) - Seleciona o index dos elementos referenciados. 
 
-	$( "li:eq(2)" ).css("background-color","red");  //  seleciona a terceira li em uma ul
+	$( "li:eq(2)" ).comandos  //  seleciona a terceira li em uma ul
 	
 ### $( ":odd" ) - Seleciona elementos ímpares.
 
-	$( "tr:odd" ).css("background-color","red");  // seleciona linhas ímpares em uma tabela
+	$( "tr:odd" ).comandos  // seleciona linhas ímpares em uma tabela
 	
 ### $( ":even" ) - Seleciona elementos pares.
 
-	$( "tr:even" ).css("background-color","blue");  //  seleciona linhas pares em uma tabela
+	$( "tr:even" ).comandos //  seleciona linhas pares em uma tabela
 	
 ### $( ":first" ) - Seleciona o primeiro elemento de um conjunto de elementos.
 
-	$( "p:first" ).css("background-color","blue");  //  seleciona o primeiro p
+	$( "p:first" ).comandos //  seleciona o primeiro p
 	
 ### $( ":last" ) - Seleciona o último elemento de um conjunto de elementos.
 
-	$( "p:last" ).css( "background-color","blue" );  //  seleciona o último p
+	$( "p:last" ).comandos  //  seleciona o último p
 	
 ### $( ":last-child" ) - Seleciona o último filho em um nó Html.
 
-	$( "div span:last-child" ).addClass( "color","red" );  //  seleciona o último span dentro de uma div
+	$( "div span:last-child" ).comandos  //  seleciona o último span dentro de uma div
 
 ### $( ":only-child" ) - Seleciona todos os elementos que são filhos únicos de seus pais.
 
-	$( "div span:only-child" ).css( "color","red" ); // seleciona apenas o span dentro de div que só tem este span
+	$( "div span:only-child" ).comandos // seleciona apenas o span dentro de div que só tem este span
 	
 ### $( ":only-of-type" ) - Seleciona todos os elementos que não têm irmãos com o mesma tag.
 
-	$( "div span:only-of-type" ).css( "color","red" ); // seleciona apenas spans se não houver outros span na div
+	$( "div span:only-of-type" ).comandos // seleciona apenas spans se não houver outros span na div
 	
 ### $( ":gt(index)" ) - Seleciona elementos com o index maior em um conjunto de elementos.
 
-	$( "td:gt(4)" ).css( "backgroundColor", "yellow" ); // seleciona células depois da quinta célula em uma tabela
+	$( "td:gt(4)" ).comandos // seleciona células depois da quinta célula em uma tabela
 	
 ### $( ":lt(index)" ) - Seleciona elementos com o index menor em um conjunto de elementos.
 
-	$( "lt:gt(4)" ).css( "backgroundColor", "yellow" );  //  seleciona células antes da quarta célula em uma tabela
+	$( "td:lt(4)" ).comandos  //  seleciona células antes da quarta célula em uma tabela
 	
 ### $( ":nth-child(index)" ) - Seleciona elementos a partir de determinada localização.
 
-	$( "ul li:nth-child(2)" ).css( "color", "red" );  //  seleciona o segundo li em uma ul
+	$( "ul li:nth-child(2)" ).comandos  //  seleciona o segundo li em uma ul
 	
 ### $( ":nth-last-child(index)" ) - Seleciona elementos a partir de determinada localização do último para o primeiro.
 
-	$( "ul li:nth-last-child(2)" ).css( "color", "red" )  //  seleciona o segundo li de baixo para cima em uma ul
+	$( "ul li:nth-last-child(2)" ).comandos  //  seleciona o segundo li de baixo para cima em uma ul
 	
 ### $( ":nth-of-type(index)" ) - Seleciona elementos do mesmo tipo em determinada localização.
 
-	$( "span:nth-of-type(2)" ).css( "color", "red" );  //  seleciona o segundo span 
+	$( "span:nth-of-type(2)" ).comandos;  //  seleciona o segundo span 
 	
 ### $( ":nth-last-of-type(index)" ) - Seleciona elementos do mesmo tipo a partir de determinada localização do último para o primeiro.
 
-	$("span:nth-last-of-type(2)").css( "color", "red" );  //  seleciona o segundo span de baixo para cima em uma ul	
+	$("span:nth-last-of-type(2)").comandos;  //  seleciona o segundo span de baixo para cima em uma ul	
 	
 ### ( "option:selected" ) - Seleciona itens selecionados em um select.
 
-	$( "select option:selected" ).comados  //  seleciona um ou mais elementos selecionados dentro de um select
+	$( "select option:selected" ).comados  //  seleciona um ou mais elementos selecionados dentro do select
 	
 ### $( "[atribute=type]" ) - Seleciona qualquer tipo de input.
 	
 	$( "[input=checkbox]" ).comandos  // seleciona inputs do tipo checkbox
 	
+### $( "input[atribute='value']" ) - Seleciona com o atributo que tenha o valor especificado.
+
+	$( "input[name='meuInput']" ).comandos  // seleciona o input com o atributo name igual meuInput.
+ 	
 ### $( "[attribute|='value']" ) - Seleciona elementos que possuam o atributo especificado com um valor igual a uma string determinada ou que começa com essa seqüência seguida de um hífen (-)
 
 	$( "input[name|='en']" ).comandos  // seleciona en, en-UK
