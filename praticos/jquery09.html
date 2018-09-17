@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 09</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+	
+	<style>
+		#div1 {
+			height: 100px;
+			width: 70%;
+			color: #fff;
+			background-color: #000;
+		}
+		ul:hover {
+			cursor: pointer;
+		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery08.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery10.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<button class="btn btn-primary btn-sm" id="btn1">Clique</button>
+		<p>Testando event.namespace</p>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-warning btn-sm" id="btn2">Clique</button><br>
+		<span>Testando event.result</span>
+	</div><hr>
+
+	<ul>
+		<li>item 1
+			<ul>
+				<li>sub item 1-a</li>
+				<li>sub item 1-b</li>
+			</ul>
+		</li>
+		<li>item 2
+			<ul>
+				<li>sub item 2-a</li>
+				<li>sub item 2-b</li>
+			</ul>
+		</li>
+	</ul><hr>
+
+	<div class="container-fluid">	
+		<div class="row">	
+			<div class="form-group">			
+				<input class="form-control" id="input" value="Digite algo">
+				<strong></strong>
+			</div>
+		</div>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-danger" id="btn3">Clique</button>
+		<em></em>
+	</div><hr>
+
+	<div id="div1"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery09.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 26</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<style>
+		.highlight {
+			color: #fff;
+			background-color: red;
+		}
+		p {
+			cursor: pointer;
+		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery25.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery27.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<h6>Digite 'correto' para validar.</h6>
+		<form class="form-inline" action="javascript:alert( 'Digitado corretamente!' );">
+			<div class="form-group">
+		    	<input type="text" class="form-control">
+		    	<button type="submit" class="btn">Enviar</button>
+			</div>
+		</form>
+		<span></span>
+		<code></code>
+	</div><hr>
+
+	<div id="div">
+		<ul id="ul">
+			<li id="um"></li>
+			<li id="dois"></li>
+			<li id="tres"></li>
+		</ul>
+	</div><hr>
+
+	<div>
+		<samp></samp>
+	</div><hr>
+
+	<div>
+		<button class="btn btn-success">Clique</button>
+		<b>OI, e</b>
+		<b style="display: none">Tchauu...</b>
+	</div><hr>
+
+	<div>
+		<p>Clique para toggle (<em>clicks: 0</em>)</p>
+		<p class="blue highlight">highlight (<em>clicks: 0</em>)</p>
+		<p>neste (<em>clicks: 0</em>)</p>
+		<p>parágrafos (<em>clicks: 0</em>)</p>
+	</div><hr>
+
+	<div>
+		<a type="button" class="btn btn-info" id="foo">trigger()</a>
+		<a type="button" class="btn btn-warning" id="bar">trigger()</a>
+		<h2>Cliques no botão #1.strong <strong>0</strong></h2>
+		<h2>Cliques no botão #2.strong <strong>0</strong></h2>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery26.js"></script>
+
+</body>
+</html>

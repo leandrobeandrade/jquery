@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 22</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<style>
+		#div {
+ 			padding-bottom: 50px;
+ 		}
+		.div {
+    		height: 50px;
+    		width: 50px;
+    		float: left;
+    		margin-right: 10px;
+    		display: none;
+    		background-color: #090;
+ 		}
+ 		.form-control {
+ 			width: 50%;
+ 		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery21.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery23.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<dl>
+  			<dt id="term-1">term 1</dt>
+  			<dd>definition 1-a</dd>
+  			<dd>definition 1-b</dd>
+  			<dd>definition 1-c</dd>
+  			<dd>definition 1-d</dd>
+ 			
+ 			<dt id="term-2">term 2</dt>
+ 			<dd>definition 2-a</dd>
+ 			<dd>definition 2-b</dd>
+ 			<dd>definition 2-c</dd>
+ 			
+ 			<dt id="term-3">term 3</dt>
+ 			<dd>definition 3-a</dd>
+  			<dd>definition 3-b</dd>
+		</dl>
+	</div><hr>
+
+	<div id="div">
+		<button class="btn btn-success">Clique</button>
+		<p>Pronto...</p>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+		<div class="div"></div>
+	</div><hr>
+
+	<div>
+  		<input type="checkbox" checked="checked">
+  		<input type="checkbox">
+	</div><hr>
+
+	<div class="form-group">
+		<input type="text" class="form-control" id="inputTitle" title="tudo certo">
+		<button class="btn btn-warning">Mudar atributo title</button>
+		<b id="log"></b>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery22.js"></script>
+
+</body>
+</html>

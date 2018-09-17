@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 21</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<style>
+		td {
+    		width: 40px;
+    		background: green;
+  		}
+  		b, span, i{
+    		padding: .5em;
+    		border: 1px solid;
+  		}
+  		b {
+    		color: blue;
+  		}
+  		.div1 {
+  			height: 60px;
+  			width: 120px;
+  			background-color: #BAE72E;
+  			float: left;
+  		}
+  		.before {
+    		border: solid 1px red;
+  		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery20.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery22.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>	
+		<div><p>Hello</p></div>
+		<div class="selected"><p>Hello de novo</p></div>
+	</div><hr>
+
+	<div>
+		<table border="1" class="table">
+  			<tr><td>Value 1</td><td></td></tr>
+  			<tr><td>Value 2</td><td></td></tr>
+		</table>
+	</div><hr>
+
+	<div>
+		<i>
+    		<span>
+      			<b>My parents are: </b>
+    		</span>
+  		</i>
+	</div><hr>
+
+	<div>
+		<ul class="level-1 yes">
+			<li class="item-i">I</li>
+			<li class="item-ii">II
+				<ul class="level-2 yes">
+					<li class="item-a">A</li>
+					<li class="item-b">B
+						<ul class="level-3">
+							<li class="item-1">1</li>
+							<li class="item-2">2</li>
+							<li class="item-3">3</li>
+						</ul>
+					</li>
+					<li class="item-c">C</li>
+				</ul>
+			</li>
+			<li class="item-iii">III</li>
+		</ul>
+	</div><hr>
+
+	<div>
+		<div>
+			<p id="p1">Hello</p>
+		</div>
+		<p id="p2"></p>
+	</div><hr>
+
+	<div>
+		<ul>
+  			<li>list item 1</li>
+  			<li>list item 2</li>
+  			<li class="third-item">list item 3</li>
+  			<li>list item 4</li>
+		</ul>
+	</div><hr>
+
+	<div id="div">
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+		<div class="div1"></div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery21.js"></script>
+
+</body>
+</html>

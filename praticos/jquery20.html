@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 20</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<style>
+		pre {
+			display: none;
+		}
+		.abs {
+			width: 200px;
+    		height: 50px;
+    		margin-left: 400px;
+    		margin-top: -50px;
+    		background-color: green;
+    		cursor: pointer;
+		}
+		i, code:hover {
+			cursor: pointer;
+		}
+		.div {
+    		width: 100px;
+    		height: 80px;
+    		margin: 5px;
+    		float: left;
+    		background: #b9e;
+  		}
+  		.div2 {
+    		width: 100px;
+    		height: 80px;
+    		margin: 5px;
+    		float: left;
+    		background: #b9e;
+  		}
+  		p:first-child {
+  			width: 50%;
+  			border: solid 1px;
+  		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery19.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery21.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>	
+		<button class="btn btn-default btn-sm" id="theone">N&atilde;o faz nada..</button>
+		<button class="btn btn-success btn-sm" id="bind">Add Click</button>
+		<button class="btn btn-danger btn-sm" id="unbind">Remove Click</button>
+		<pre>Clicado!</pre>
+	</div><hr>
+
+	<div id="div">
+		<div id="result">Clique em um elemento.</div>
+		<i>Esta é a melhor maneira <code>de encontrar</code> um offset.</i>
+		<div class="abs"></div>
+	</div><hr>
+
+	<div>
+		<ul class="level-1">
+			<li class="item-i">I</li>
+			<li class="item-ii"  style="position: relative">II
+				<ul class="level-2">
+					<li class="item-a">A</li>
+					<li class="item-b">B
+						<ul class="level-3">
+							<li class="item-1">1</li>
+							<li class="item-2">2</li>
+							<li class="item-3">3</li>
+						</ul>
+					</li>
+					<li class="item-c">C</li>
+				</ul>
+			</li>
+			<li class="item-iii">III</li>
+		</ul>
+	</div><hr>
+
+	<div style="padding-bottom:90px">
+		<div class="div">
+			<span></span>
+		</div>
+		<div class="div">
+			<span>Não funciona</span>
+			<span>Não funciona</span>
+		</div>	
+		<div class="div">
+			<span></span>
+		</div>
+	</div><hr>
+
+	<div style="padding-bottom:90px">
+		<div class="div2">
+			<span></span>
+		</div>
+		<div class="div2">
+			<span>Não funciona</span>
+			<span>Não funciona</span>
+		</div>	
+		<div class="div2">
+			<span></span>
+		</div>
+	</div><hr>
+
+	<div id="div2">		
+		<p id="p1">Hello</p><p id="p2"></p><p id="p3"></p>
+	</div>	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery20.js"></script>
+
+</body>
+</html>
