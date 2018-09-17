@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery - 03</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<style>
+		.selectAll {
+		    width: 100px;
+		    height: 40px;
+		    float: left;
+		    padding: 10px;
+		    margin: 10px;
+		    background-color: #EEEEEE;
+	  	}
+	  	#teste {
+		    width: auto;
+		    height: auto;
+		    background-color: transparent;
+	  	}
+	  	#block {
+    		background-color: #bca;
+    		width: 100px;
+    		border: 1px solid green;
+  		}
+  		#mover {
+  			background: yellow;
+   	 		border: 1px solid #AAA;
+    		width: 80px;
+    		height: 80px;
+    		float: left;
+  		}
+  		#go {
+			background-color: green;
+			border: solid 1px #ccc;
+			border-radius: 4px;
+  		}
+  		#go:hover{
+			cursor: pointer;
+  		}
+	</style>
+
+	<nav aria-label="Page navigation example" class="nav">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="jquery02.html">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="jquery04.html">Pr&oacute;xima</a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<button type="button" class="btn btn-primary btn-sm">Clique</button> <br>
+		<input type="checkbox" id="check" checked>&nbsp;<label for="check"> Passe o mouse</label>
+		<span id="result"> </span><br>
+		<span id="after">Alguma coisa antes:</span><br>
+		<span id="before">Alguma coisa depois</span>
+	</div>
+
+	<div id="teste">
+  		<div class="selectAll">DIV</div>
+  		<span class="selectAll">SPAN</span>
+  		<p class="selectAll">P <button type="button">Bot&atilde;o</button></p><br>
+  		<span id="selectAll"></span>
+	</div><br><hr>
+
+	<div>
+		<button type="button" style="background-color:green;color:#fff" id="go">&raquo; Animar</button>
+		<span id="block">Anima&ccedil;&atilde;o</span>
+	</div><br>
+
+	<div id="mover"></div> <br><br><br><br><hr>
+
+	<div>
+		<p id="append">Alguma coisa depois: </p>
+		<span id="appendTo">Adiconado com appendTo()</span>
+ 		<div id="div1">FOO! </div><br>
+ 		<span id="prepend"> Adicionado com prepend().</span><em>Hello.</em><br>
+ 		<div id="div2">FOO!</div>
+		<span id="prependTo"> Adicionado com prependTo()</span>
+	</div><hr>
+
+	<div>
+		<p id="attr">Utilizando attr para pegar o <samp title="jquery, html5">atributo dos</samp> elementos</p>
+ 		<p>O texto dentro do atributo <code>samp</code> &eacute;: <span id="span"></span></p>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery03.js"></script>
+
+</body>
+</html>
