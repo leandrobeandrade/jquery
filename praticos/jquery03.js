@@ -1,17 +1,17 @@
 $(document).ready(function(){
 	$(".btn").on("click", function() {
 		$(this).toggleClass("btn-danger");				 			
-	});																					// toggleClass()
+	});													// toggleClass()
 
 	var check = $("#check");
 	check.on("mouseover", function() {
-		$("#result").html(check.attr("checked"));										// attr()
+		$("#result").html(check.attr("checked"));							// attr()
 	});																					
 
-	$("#after").after("<b>Adicionado com after()</b>"); 								// after()
-	$("#before").before("<b>Adicionado com before(), </b>");							// before()
+	$("#after").after("<b>Adicionado com after()</b>"); 							// after()
+	$("#before").before("<b>Adicionado com before(), </b>");						// before()
 
-	var elementCount = $("#teste").find("*").css("border", "3px solid red").length;		// * - select all
+	var elementCount = $("#teste").find("*").css("border", "3px solid red").length;		        	// * - select all
 	$("#selectAll").text(elementCount + " elementos encontrados");		
 
 	$("#go").on("click", function() {
@@ -22,19 +22,19 @@ $(document).ready(function(){
 			fontSize: "3em",
 			borderWidth: "10px"
 		}, 1500 );
-	});																					// animate()
+	});													// animate()
 
 	function animateIt() {
 		$("#mover").slideToggle("slow", animateIt);					
-	} 																					// slideToggle()
+	} 													// slideToggle()
 	animateIt();
 
 	$("#append").append("<strong>Adiconado com append()</strong>");						// append()
-	$("#appendTo").appendTo("#div1");													// appendTo()
-	$("#prepend").prepend($("em"));														// prepend()
-	$("#prependTo").prependTo($("div2"));												// prependTo()
+	$("#appendTo").appendTo("#div1");									// appendTo()
+	$("#prepend").prepend($("em"));										// prepend()
+	$("#prependTo").prependTo($("div2"));									// prependTo()
 
-	var texto = $("samp").attr("title");												// attr()
+	var texto = $("samp").attr("title");									// attr()
 	$("#span").text(texto);	
 
 })
