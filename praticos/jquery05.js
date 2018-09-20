@@ -47,11 +47,11 @@ $(document).ready(function() {
   			"border-style": "inset",
   			"cursor": "pointer"
   		});
-  	});								
+  	});
 
 	$(".p:contains('John')").css("text-decoration", "underline");							// :contains()
 
-	$("#p3").contents().filter(function(){										// contents()		
+	$("#p3").contents().filter(function(){										// contents()
             	return this.nodeType !== 1; 
  	}).wrap("<b></b>");												// wrap()
 
