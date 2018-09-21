@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#div1").contextmenu(function() {												// contextmenu()
+	$("#div1").contextmenu(function() {									// contextmenu()
 		alert("Manipulador contextmenu() chamado.");
 	});
 
@@ -8,11 +8,11 @@ $(document).ready(function() {
 	$("span:last").text($("#div2").data("test").last);
 	
 	$("#btn1").click(function() {
-		$("div.first").slideUp(300).delay(800).fadeIn(400);							// efeitos
+		$("div.first").slideUp(300).delay(800).fadeIn(400);						// efeitos
 		$("div.second").slideUp(300).fadeIn(400);
 	});
 
-	$("body").delegate("strong", "click", function() {								// delegate()
+	$("body").delegate("strong", "click", function() {							// delegate()
 		$(this).after("<strong id='p2'> Outro parágrafo!</strong>");
 	});
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		$("#div3")
 		.show("slow")
 		.animate({left: "+=200"}, 2000)
-		.queue(function() {															// queue()
+		.queue(function() {										// queue()
 			$(this).addClass("novacor").dequeue();
 		})
 		.animate({left: "-=200"}, 500)
@@ -35,7 +35,7 @@ $(document).ready(function() {
 		.animate({left:"+=200px"}, 2000)
 		.animate({top:"400px"}, 600)
 		.queue(function() {
-			$(this).toggleClass("red").dequeue();									// dequeue()
+			$(this).toggleClass("red").dequeue();							// dequeue()
 		})
 		.animate({left:"10px", top:"460px"}, 700);
 	});
@@ -50,7 +50,7 @@ $(document).ready(function() {
 			em.prependTo("pre");
 			em = null;
 		} else {
-			em = $("em").detach();													// detach()
+			em = $("em").detach();									// detach()
 		}
 	});
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
 		$("i").toggleClass("color");
 	};
 
-	$("#p5").on("click", foo);														// on()
-//	$("#p5").off("click", foo);														// off()
+	$("#p5").on("click", foo);										// on()
+//	$("#p5").off("click", foo);										// off()
 
 })
