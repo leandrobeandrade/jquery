@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	$("strong:empty").text("Estava vazio, foi selecionado com :empty");					// :empty
 
-	$("input:disabled").val("Input desabilitado!");										// :disabled
+	$("input:disabled").val("Input desabilitado!");								// :disabled
 
 	$("ul.first").find(".foo")															// find()
 	.css("background-color", "red")
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	.css("background-color", "green")
 	.end();																				// end()
 
-	$(".div1").eq(3).css("background-color", "blue");									// eq()
+	$(".div1").eq(3).css("background-color", "blue");							// eq()
 	$(".div1").eq(-2).css("background-color", "black");
 
 })
