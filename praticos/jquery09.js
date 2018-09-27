@@ -4,23 +4,23 @@ $(document).ready(function() {
 	});
 	$("#btn1").click(function(event) {
 		$("p").trigger("mouseover");
-	});																			// event.namespace
+	});													// event.namespace
 	
 	$("#btn2").click(function(event) {
 		return "Resultado retornado por uma função";
 	});
 	$("#btn2").click(function(event) {
-		$("span").html(event.result);											// event.result
+		$("span").html(event.result);									// event.result
 		//	$("span").text(event.type);
 	});
 
 	function handler(event) {
-		var target = $(event.target);											// event.target
+		var target = $(event.target);									// event.target
 		if (target.is("li")) {
 			target.children().toggle();
 		}
 	}
-	$("ul").click(handler).find("ul").hide();									// find()
+	$("ul").click(handler).find("ul").hide();								// find()
 
 	$("#input").on("keydown", function(event) {
 		$("strong").html("Evento: " + event.type + " - " + " chave: " + event.which);	// event.wich
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		} else {
 			$("em").append("Click novamente.<br>");
 		}
-		last = event.timeStamp;													// event.timeStamp
+		last = event.timeStamp;										// event.timeStamp
 	});
 
 	$("#div1").on("mousemove", function(event) {
@@ -42,8 +42,8 @@ $(document).ready(function() {
 	});
 
 	$("#div1").mouseout(function(event) {
-		alert(event.relatedTarget.nodeName); 									// event.relatedTarget
-		alert(event.type);														// event.type
+		alert(event.relatedTarget.nodeName); 								// event.relatedTarget
+		alert(event.type);										// event.type
 	});
 
 })
