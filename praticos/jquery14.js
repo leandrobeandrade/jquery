@@ -2,8 +2,8 @@ $(document).ready(function() {
 	var arr = ["um", "dois", "tres", "quatro", "cinco"];
 	var obj = {um: 1, dois: 2, tres: 3, quatro: 4, cinco: 5};
 
-	jQuery.each(arr, function(i, val) {													// $.each()
-		$("#" + val).text("Meu valor é: " + val + " ");									// text()
+	jQuery.each(arr, function(i, val) {										// $.each()
+		$("#" + val).text("Meu valor é: " + val + " ");								// text()
 
 		// Para a execução após o "tres"
 		return (val !== "tres");
@@ -22,11 +22,11 @@ $(document).ready(function() {
 	 	banana: {preço: 200},
 		limão: 100
 	};
-	$.extend(object1, object2);															// $.extend()
+	$.extend(object1, object2);											// $.extend()
 	$("#log").append(JSON.stringify(object1));
 
 	var toggleFx = function() {
-		$.fx.off = !$.fx.off;															// $.fx.off
+		$.fx.off = !$.fx.off;											// $.fx.off
 	};
 	toggleFx();
 	$("button:last").click(toggleFx);
@@ -52,9 +52,9 @@ $(document).ready(function() {
 	})();
 
 	var arr = [1, 9, 3, 8, 6, 1, 5, 9, 4, 7, 3, 8, 6, 9, 1];
-	$("strong").text(arr.join(", "));													// join()
+	$("strong").text(arr.join(", "));										// join()
 
-	arr = jQuery.grep(arr, function(n, i) {												// $.grep()
+	arr = jQuery.grep(arr, function(n, i) {										// $.grep()
 		return (n !== 5 && i > 4);
 	});
 	$("p").text(arr.join(", "));
@@ -64,7 +64,7 @@ $(document).ready(function() {
 	});
 	$("span").text(arr.join(", "));
 
-	var arr = [4, "Pete", 8, "John"];													// $.inArray()
+	var arr = [4, "Pete", 8, "John"];										// $.inArray()
 	var $code = $("code");
 	$code.eq(0).text("[" + jQuery.inArray("John", arr) + "]");
 	$code.eq(1).text("[" + jQuery.inArray(4, arr) + "]");
