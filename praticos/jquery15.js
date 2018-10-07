@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var array = [0, 1, 2, 3, 4];
-	$("p").append($.isArray(array));												// $.isArray()
+	$("p").append($.isArray(array));									// $.isArray()
 
 	var elems = $(".div");
 	var div = $("#div");
