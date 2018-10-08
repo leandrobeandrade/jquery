@@ -4,24 +4,24 @@ $(document).ready(function() {
 
 	var elems = $(".div");
 	var div = $("#div");
-	var arr = jQuery.makeArray(elems);												// $.makeArray()
-	arr.reverse();																	// reverse()
+	var arr = jQuery.makeArray(elems);									// $.makeArray()
+	arr.reverse();												// reverse()
 	$(arr).appendTo(div);
 
 	var arr = ["a", "b", "c", "d", "e"];
 	$("code").text(arr.join(", "));
 	 
-	arr = jQuery.map(arr, function(n, i) {											// $.map()
-		return (n.toUpperCase() + "[" + i + "]");									// toUpperCase()
+	arr = jQuery.map(arr, function(n, i) {									// $.map()
+		return (n.toUpperCase() + "[" + i + "]");							// toUpperCase()
 	});
-	$("em").text(arr.join(", "));													// join()
+	$("em").text(arr.join(", "));										// join()
 	 
 	arr = jQuery.map(arr, function(a) {
-	  	return (a + a).toLowerCase();												// toLowerCase()
+	  	return (a + a).toLowerCase();									// toLowerCase()
 	});
 	$("span").text(arr.join(", "));
 
-	var arrays1 = $.merge([0, 1, 2], [2, 3, 4]);									// $.merge()
+	var arrays1 = $.merge([0, 1, 2], [2, 3, 4]);								// $.merge()
 	$("b:first").append("merge() deste vetor resulta em: " + arrays1);
 
 	var arrays2 = $.merge([3, 2, 1], [4, 3, 2]);
@@ -33,10 +33,10 @@ $(document).ready(function() {
 	$("strong").append("merge() destes vetores resulta em: " + result)
 
 	var params = {nome: 'John', sobrenome: 'Smith', idade: 34};
-	var str = jQuery.param(params);													// $.param()
+	var str = jQuery.param(params);										// $.param()
 	$("i").text(str);
 
-	var obj = jQuery.parseJSON('{"name": "John"}');									// $.parseJSON()
+	var obj = jQuery.parseJSON('{"name": "John"}');								// $.parseJSON()
 	$("pre").text("O valor deste JSON é válido? ")
 	$("pre").append(obj.name === "John");
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 	var voce = {tipo: "gato"};
 	var eles = {tipo: "peixe"};
-	var proxy = $.proxy(eu.test, eu, voce, eles);									// $.proxy()
+	var proxy = $.proxy(eu.test, eu, voce, eles);								// $.proxy()
 
 	$("#test").on("click", proxy);
 
