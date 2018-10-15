@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$("span").not(".green, #blueone").css("border-color", "red");						// not()
 
 	$("input:not(:checked) + samp").css("background-color", "yellow");					// :not
-	$("input").attr("disabled", "disabled");											// atrr()
+	$("input").attr("disabled", "disabled");								// atrr()
 
 	$(".ul li:nth-child(2)").append("<strong> - 2nd!</strong>");						// :nth-child()
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
     // :nth-last-of-type()
 
 	var n = 0;
-	$(".target").one("click mouseenter", function() {                              		// one()
+	$(".target").one("click mouseenter", function() {                              				// one()
   		$(".count").html(++n);
 	});
 
