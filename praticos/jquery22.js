@@ -8,20 +8,20 @@ $(document).ready(function() {
 		$(".div").each(function(i) {
 			$(this).fadeIn().fadeOut(1000 * (i + 1));
 		});
-		$(".div").promise().done(function() {											// promisse()
+		$(".div").promise().done(function() {								// promisse()
 			$("p").append(" Finalizado! ");
 		});
 	});
 
-	$("input[type='checkbox']").prop({disabled: true});									// prop()
+	$("input[type='checkbox']").prop({disabled: true});							// prop()
 
-	(function() {																		
+	(function() {											
 		var inputTitle = $("#inputTitle").attr("title");
 		$("button:last").click(function() {
 			var input = $(this).next();
 
 			if (input.attr("title") === inputTitle) {
-				input.removeAttr("title")												// removeAttr()
+				input.removeAttr("title")							// removeAttr()
 			} else {
 				input.attr("title", inputTitle);
 			}
