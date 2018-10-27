@@ -10,7 +10,7 @@ $(document).ready(function() {
 	});
 
 	$(".botao").click(function() {
-  		$(this).parent().slideUp("slow", function() {									// slideUp()
+  		$(this).parent().slideUp("slow", function() {								// slideUp()
   			$("code").text($(".botao", this).text() + " foi completada.");			
   		});
 	});
