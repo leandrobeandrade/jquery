@@ -34,7 +34,7 @@ $(document).ready(function() {
 		parag.click(function() {
 			count++;
 			parag.find("em").text("clicks: " + count);									// find()
-			parag.toggleClass("highlight", count % 3 === 0);							// toggleClass()
+			parag.toggleClass("highlight", count % 3 === 0);						// toggleClass()
 		});
 	});
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		update($("strong:first"));														
 	});
 	$("#bar").click(function() {
- 		$("#foo").trigger("click");														// trigger()
+ 		$("#foo").trigger("click");										// trigger()
 		update($("strong:last"));														
 	});
 
