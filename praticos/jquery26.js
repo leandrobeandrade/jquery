@@ -43,11 +43,11 @@ $(document).ready(function() {
 		j.text(n + 1);
 	}
 	$("#foo").click(function() {
-		update($("strong:first"));						
+		update($("strong:first"));
 	});
 	$("#bar").click(function() {
  		$("#foo").trigger("click");						// trigger()
-		update($("strong:last"));														
+		update($("strong:last"));
 	});
 
 })
