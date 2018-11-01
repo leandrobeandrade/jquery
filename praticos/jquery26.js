@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("form").submit(function(event) {						// submit()
+	$("form").submit(function(event) {								// submit()
 		if ($("input:first").val() === "correto") {
 			$("span").text("Válido").show();
             		return;
@@ -8,23 +8,23 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-	$("#ul li").text(function(index) {						// text()
+	$("#ul li").text(function(index) {								// text()
 		return "item número " + (index + 1);
 	});
 
 	function lista(divs) {
 		var a = [];
 		for (var i = 0; i < divs.length; i++) {
-			a.push(divs[i].innerHTML);					// push()
+			a.push(divs[i].innerHTML);							// push()
 		}
-		$("samp").text(a.join(" "));						// join()
+		$("samp").text(a.join(" "));								// join()
 	}
-	lista($("#div").toArray()							// toArray()
-	.reverse());									// reverse()
+	lista($("#div").toArray()									// toArray()
+	.reverse());											// reverse()
 
 	var flip = 0;
 	$("button:last").click(function() {
-		$("b").toggle(flip++ % 2 === 0);					// toggle()
+		$("b").toggle(flip++ % 2 === 0);							// toggle()
 	});
 
 	var count = 0;
@@ -33,8 +33,8 @@ $(document).ready(function() {
 		var count = 0;
 		parag.click(function() {
 			count++;
-			parag.find("em").text("clicks: " + count);			// find()
-			parag.toggleClass("highlight", count % 3 === 0);		// toggleClass()
+			parag.find("em").text("clicks: " + count);					// find()
+			parag.toggleClass("highlight", count % 3 === 0);				// toggleClass()
 		});
 	});
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		update($("strong:first"));
 	});
 	$("#bar").click(function() {
- 		$("#foo").trigger("click");						// trigger()
+ 		$("#foo").trigger("click");								// trigger()
 		update($("strong:last"));
 	});
 
