@@ -3,7 +3,7 @@ $(document).ready(function() {
 		$("#input1").trigger("focus");
 	});
 	$("#btn2").click(function() {
-		$("#input1").triggerHandler("focus");										// triggerHandler()
+		$("#input1").triggerHandler("focus");								// triggerHandler()
 	});
 	$("#input1").focus(function() {
 		$("<span>Focado!</span>").appendTo("span").fadeOut(1000);
