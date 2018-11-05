@@ -23,11 +23,11 @@ $(document).ready(function() {
 		$("#input2").val(text);														// val()
 	});
 
-	$(".div:visible").click(function() {											// :visible
+	$(".div:visible").click(function() {									// :visible
 		$(this).css("background-color","yellow");
 	});
 	$(".btn-dark").click(function() {
-		$("div:hidden").show("fast");												// :hidden
+		$("div:hidden").show("fast");									// :hidden
 	});
 
 })
