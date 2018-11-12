@@ -12,15 +12,15 @@ $(document).ready(function() {
 	var tags = $("h5");
 	$("#btn3").click(function() {
 		if (tags.parent().is("p")) {
-			tags.unwrap();															// unwrap()
+			tags.unwrap();										// unwrap()
 		} else {
-			tags.wrap("<p></p>");													// wrap()
+			tags.wrap("<p></p>");									// wrap()
 		}
 	});
 
 	$(".btns").click(function() {
 		var text = $(this).text();
-		$("#input2").val(text);														// val()
+		$("#input2").val(text);										// val()
 	});
 
 	$(".div:visible").click(function() {									// :visible
