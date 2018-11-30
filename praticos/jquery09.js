@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$("ul").click(handler).find("ul").hide();								// find()
 
 	$("#input").on("keydown", function(event) {
-		$("strong").html("Evento: " + event.type + " - " + " chave: " + event.which);	// event.wich
+		$("strong").html("Evento: " + event.type + " - " + " chave: " + event.which);			// event.wich
 	});
 
 	var last, diff;
@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 
 	$("#div1").on("mousemove", function(event) {
-		$("#div1").text("pageX: " + event.pageX + ", pageY: " + event.pageY);	// event.pageX
+		$("#div1").text("pageX: " + event.pageX + ", pageY: " + event.pageY);				// event.pageX
 	});
 
 	$("#div1").mouseout(function(event) {
