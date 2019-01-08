@@ -4,9 +4,9 @@
 
 **.fadeOut()** - Oculta os elementos correspondentes, tornando-os transparentes.
 
-**.fadeTo()** - AjustA a opacidade dos elementos correspondentes.
+**.fadeTo()** - Ajusta a opacidade dos elementos correspondentes.
 
-**.fadeToggle()** - ExibE ou oculte os elementos correspondentes animando sua opacidade.
+**.fadeToggle()** - Exibe ou oculte os elementos correspondentes animando sua opacidade.
 
 **.filter()** - Reduz o conjunto de elementos correspondentes para aqueles que correspondem ao seletor ou passe no teste da função.
 
