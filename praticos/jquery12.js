@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 	$("button:last").click(function() {
 		$("b:last-child").hide("fast", function() {								// hide()
-			$(this).prev().hide("fast", arguments.callee);							/ prev()
+			$(this).prev().hide("fast", arguments.callee);							// prev()
 		});
 	});
 	$("button:first").click(function() {
